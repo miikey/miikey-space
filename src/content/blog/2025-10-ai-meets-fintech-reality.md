@@ -12,10 +12,11 @@ After two years of deploying AI across our payment infrastructure, here's the ho
 
 ## Where AI Is Genuinely Working
 
-![AI fraud detection in fintech — real-time risk scoring running at payment scale](/images/blog/2025-10-ai-meets-fintech-reality-inline-01.jpg)
-*The AI use cases that survive compliance review are narrow, explainable, and measurable. Everything else stays in the demo.*
 
 > The fintech AI deployments that make it to **production** share one trait: the decision is auditable, the outcome is measurable, and the downside is bounded. Everything else is a pilot that never ships.
+
+![AI fraud detection in fintech — real-time risk scoring running at payment scale](/images/blog/2025-10-ai-meets-fintech-reality-inline-01.jpg)
+*The AI use cases that survive compliance review are narrow, explainable, and measurable. Everything else stays in the demo.*
 
 **Transaction monitoring and anomaly detection.** This is the most mature and unambiguously valuable application. ML models trained on transaction patterns detect anomalies that rule-based systems miss — unusual velocity patterns, merchant category code mismatches, geographic impossibilities. Our current system catches 3x more true fraud than the rule-based system it replaced, with fewer false positives.
 

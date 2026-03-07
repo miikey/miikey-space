@@ -16,6 +16,12 @@
 - 统一使用 `.jpg`（用 curl 下载 Unsplash 时加 `?w=1200&h=630&fit=crop&auto=format`）
 - 存入 `public/` 后在 markdown 中用 `/images/blog/xxx.jpg` 引用
 
+### 图片布局规则（重要）
+- **禁止**图片紧跟 `## 标题` 之后，必须先有至少 1-2 段文字
+- **禁止**行内图片与 hero 图片使用同一张照片（视觉重复）
+- 图片应放在段落之间，起到视觉缓冲和内容补充的作用
+- 每篇文章图片数量：行内 2-3 张，分布在文章中部，不集中在开头
+
 ### 下载命令模板
 ```bash
 curl -L "https://images.unsplash.com/photo-{ID}?w=1200&h=630&fit=crop&auto=format" -o public/images/blog/{filename}.jpg

@@ -14,10 +14,11 @@ Here's why.
 
 ## The Speculative Layer Is Gone
 
-![Building in the bear — infrastructure work when the price noise disappears](/images/blog/2022-12-building-in-the-bear-inline-01.jpg)
-*When speculation retreats, the builders who remain are the ones who were never here for the price.*
 
 > Coinbase, Kraken, Chainalysis — every major crypto infrastructure company was **built or scaled in a bear market**. The pattern is consistent. Bears build; bulls speculate.
+
+![Building in the bear — infrastructure work when the price noise disappears](/images/blog/2022-12-building-in-the-bear-inline-01.jpg)
+*When speculation retreats, the builders who remain are the ones who were never here for the price.*
 
 At the peak of the 2021 bull market, the noise-to-signal ratio in crypto was extraordinary. Every week there was a new protocol, a new chain, a new "paradigm." Capital was flowing toward anything with a credible pitch deck and a token. Engineers were leaving product companies to farm yield. Attention was fractured.
 

@@ -12,10 +12,11 @@ Twelve months out, the signal is starting to separate from the noise. Here's my 
 
 ## What Survived
 
-![DeFi blue chips — Aave, Uniswap and Curve still standing after hundreds of forks faded](/images/blog/2021-02-defi-summer-retrospective-inline-01.jpg)
-*The protocols that survived DeFi Summer shared one trait: genuine utility beyond yield farming.*
 
 > Of the **1000+ DeFi projects** launched in Summer 2020, fewer than 20 still have meaningful usage today. Bears filtered for real utility over speculative yield.
+
+![DeFi blue chips — Aave, Uniswap and Curve still standing after hundreds of forks faded](/images/blog/2021-02-defi-summer-retrospective-inline-01.jpg)
+*The protocols that survived DeFi Summer shared one trait: genuine utility beyond yield farming.*
 
 **The lending primitives.** Aave and Compound are bigger now than they were at the peak of DeFi summer. The core mechanic — deposit collateral, borrow against it, earn yield as a lender — turns out to be genuinely useful. The TVL numbers have cycles but the underlying behavior has become a permanent part of how on-chain capital gets deployed.
 
