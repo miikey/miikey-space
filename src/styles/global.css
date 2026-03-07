@@ -43,6 +43,8 @@
   --accent: #008a50;
   --accent-dim: rgba(0, 138, 80, 0.10);
   --prose-fg: #1a1a1a;
+  --muted: #333333;
+  --muted-2: #666666;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
