@@ -8,7 +8,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://miikey-space.vercel.app',
+  site: 'https://miikey.com',
   integrations: [mdx(), sitemap()],
 
   vite: {

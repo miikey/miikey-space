@@ -12,7 +12,14 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 <!doctype html>
 <html lang="en">
 <head>
-  <BaseHead title={`${title} — 0xmiikey`} description={description} />
+  <BaseHead
+    title={`${title} — 0xmiikey`}
+    description={description}
+    type="article"
+    pubDate={pubDate}
+    updatedDate={updatedDate}
+    keywords="fintech, crypto, DeFi, payments, AI, blockchain, stablecoin, payment infrastructure, web3"
+  />
 </head>
 <body>
   <Header />
