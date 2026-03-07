@@ -10,9 +10,14 @@ In March 2020, contactless payment limits were raised across Southeast Asia, Eur
 
 Twelve weeks of pandemic did what ten years of fintech evangelism couldn't.
 
+> COVID did in **12 weeks** what contactless payment evangelism could not do in a decade. The catalyst was not technology readiness — it was fear of touching a keypad.
+
 ## What Actually Happened
 
 The mechanism was simple: people stopped wanting to touch things. Card terminals, PIN pads, cash — anything shared with strangers felt suddenly dangerous. The psychological barrier to new payment behavior (which normally takes years to overcome) collapsed in weeks.
+
+![Contactless payment surge — QR codes and tap-to-pay replacing cash overnight across Southeast Asia](https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1000&h=480&fit=crop&auto=format)
+*In Q2 2020, contactless payment volumes jumped 40-60% in most markets. A decade of adoption happened in weeks.*
 
 In Southeast Asia, the shift was even more pronounced because the baseline was lower — cash was still dominant in most markets heading into 2020. The jump to QR code wallets and mobile payments wasn't a marginal shift, it was structural.
 
@@ -33,6 +38,9 @@ Not all COVID-driven behavior changes will persist. Restaurant QR code menus are
 **Habit formation**: Once you've tapped your card or scanned a QR code a few dozen times, it becomes default. The friction of reverting to cash actually increases once you've built the new habit.
 
 **Infrastructure investment**: Merchants who upgraded their payment infrastructure to handle digital payments during COVID aren't going to throw it away. They'll find new uses for it — loyalty programs, delivery integration, data analytics.
+
+![Digital payment infrastructure — the merchant POS systems and QR acceptance networks built under COVID pressure](https://images.unsplash.com/photo-1580048915913-4f8f5cb481c4?w=1000&h=480&fit=crop&auto=format)
+*Merchants who built digital payment infrastructure during COVID will find new uses for it — loyalty, data, delivery.*
 
 My prediction: contactless payment rates in most markets will settle 25-35 percentage points higher than pre-COVID baselines. That's a permanent structural shift.
 

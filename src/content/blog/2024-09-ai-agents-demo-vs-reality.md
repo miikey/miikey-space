@@ -12,6 +12,9 @@ Then you try to build one for a real use case. The gap between demo and producti
 
 Having built and deployed several agents in production contexts over the past year, here's my honest accounting.
 
+![Abstract visualization of an AI system processing tasks in sequence](https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1000&h=480&fit=crop&auto=format)
+*The elegant chain-of-thought reasoning in a demo hides the messy reality of tool failures, edge cases, and latency that define production systems.*
+
 ## What Demos Hide
 
 **Reliability at tail cases.** Agent demos show the success path. Production systems encounter the full distribution of inputs: malformed data, unexpected edge cases, adversarial inputs, ambiguous instructions. LLMs handle the common cases well. Tail case handling requires explicit engineering that demos skip.
@@ -34,6 +37,9 @@ The limits: novel fraud patterns it hasn't seen before, cases requiring contextu
 
 The failure modes we encountered: confidently wrong responses about account specifics, hallucinated policy details, responses that technically answered the question asked but missed the underlying concern.
 
+![A fraud analyst reviewing transaction data on multiple monitors](https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1000&h=480&fit=crop&auto=format)
+*In fraud investigation, the agent handles information gathering in 30–45 seconds. The human analyst still makes the final call — and makes it with better information than before.*
+
 ## The Production Architecture That Works
 
 After iterations, the architecture that's holding up:
@@ -46,8 +52,13 @@ After iterations, the architecture that's holding up:
 
 **Evaluation before deployment.** A test suite of 200+ real cases with labeled expected outputs. Agents don't ship unless they clear the evaluation threshold on the full suite. This catches regressions when prompts change or models update.
 
+> **The difference between a demo agent and a production agent is a 200-case evaluation suite.** Without it, you're shipping vibes. With it, you have a regression harness that catches the subtle behavior changes that come with every model update — and there will be model updates.
+
 ## The Real Value Proposition
 
 The honest value proposition for production agents isn't "fully autonomous." It's "human judgment at higher leverage." The agent does the information gathering, synthesis, and first-pass reasoning. The human makes decisions on cases that matter, with better information and in less time.
 
 That's a meaningful productivity gain. It's not the Sci-Fi version. Build for the realistic version and you'll ship something that actually works.
+
+![Team reviewing AI agent output dashboards](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1000&h=480&fit=crop&auto=format)
+*The "human in the loop" isn't a limitation — it's the design. Agents augment human judgment; they don't replace it.*

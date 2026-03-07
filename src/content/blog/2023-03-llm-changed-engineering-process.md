@@ -10,6 +10,9 @@ ChatGPT launched in November 2022. By February 2023, GitHub Copilot was in wides
 
 Three months of serious daily use is enough time for the novelty to wear off and the real patterns to emerge. Here's an honest account of what has actually changed.
 
+![Developer writing code at a laptop](https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1000&h=480&fit=crop&auto=format)
+*LLM-assisted development has changed the texture of daily coding work — not by replacing judgment, but by accelerating the mechanical parts.*
+
 ## What Changed Immediately
 
 **Documentation and code explanation.** The first thing I changed was how I dealt with unfamiliar code. Before: find a senior person who knows the system, or spend an hour reading. After: paste the code into GPT-4, ask "explain this to me and point out anything unusual." The answers aren't always correct, but they're usually good enough to orient me in 2 minutes rather than 20.
@@ -30,9 +33,14 @@ Three months of serious daily use is enough time for the novelty to wear off and
 
 The productivity distribution shifted. Engineers who were already strong got stronger — they used LLMs to move faster in areas where they had enough expertise to evaluate the output. Engineers who were struggling got... more confidently wrong answers more quickly.
 
+> **LLMs don't tell you when they're wrong with any less confidence than when they're right.** A senior engineer can catch the confident wrong answer. A junior engineer often can't — and that asymmetry is the real risk management challenge for teams adopting these tools.
+
 This is the thing nobody talks about enough: LLMs don't tell you when they're wrong with less confidence than when they're right. A senior engineer can catch the confident wrong answer. A junior engineer often can't.
 
 We added a practice: any LLM-generated code that goes into production gets flagged as such in the PR. Not as a criticism — as context. It means the reviewer knows to apply more scrutiny to certain patterns.
+
+![Engineers collaborating on code review at whiteboard](https://images.unsplash.com/photo-1516116216-4ade5f05d95a?w=1000&h=480&fit=crop&auto=format)
+*Team practices around LLM-generated code matter as much as the tools themselves — shared norms prevent the confident-but-wrong failure mode.*
 
 ## The Bigger Picture
 
@@ -41,3 +49,6 @@ We're at the beginning of a genuine shift in how software gets built. The curren
 The engineers who will thrive aren't the ones who resist these tools or the ones who trust them uncritically. They're the ones who build accurate mental models of where LLMs are useful and where they're dangerous, and use them accordingly.
 
 That's a judgment skill. It's not that different from knowing when to use a library and when to write your own.
+
+![Close-up of code on a dark terminal screen](https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1000&h=480&fit=crop&auto=format)
+*The code still has to work. LLMs change how fast you get to a working draft — they don't change what "working" means.*

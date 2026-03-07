@@ -12,6 +12,11 @@ I'm not going to write another "is this a bubble" piece. I'm more interested in 
 
 ## What NFTs Actually Are (At the Infrastructure Layer)
 
+![On-chain ownership — the cryptographic proof behind NFT provenance and programmable assets](https://images.unsplash.com/photo-1646432676574-9d34f9bc7b70?w=1000&h=480&fit=crop&auto=format)
+*The JPEG is irrelevant. The ownership primitive — verifiable, transferable, programmable — is what matters long term.*
+
+> NFTs are not about digital art. They are about **programmable ownership** — the first time a digital asset can be provably scarce, transferable, and composable without a central registry.
+
 An NFT is a unique token on a blockchain — a record that says "this specific token, at this specific address, is owned by this specific wallet." That's it.
 
 What makes this powerful is what "owned by this specific wallet" actually means in a programmable environment. Ownership isn't a record in a company's database that can be changed, frozen, or seized. It's a cryptographic fact. The smart contract enforces it. And it's composable — any other smart contract can read the ownership state and react to it.

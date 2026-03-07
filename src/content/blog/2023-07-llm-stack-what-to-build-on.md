@@ -10,7 +10,12 @@ Six months after ChatGPT changed the conversation, the LLM application landscape
 
 Here's my current mental model of where value sits and what to actually build on.
 
-## The Commodity Layer: Foundation Models
+## The Commodity Layer
+![LLM infrastructure stack — foundation models, orchestration, and application layers](https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1000&h=480&fit=crop&auto=format)
+*The model layer is commoditising fast. The differentiation is moving up the stack.*
+
+> The foundation model layer is becoming a **commodity utility** — like compute or bandwidth. The value accrues to whoever owns the workflow, the data, and the user relationship on top.
+: Foundation Models
 
 GPT-4, Claude, Gemini, Llama — foundation model capability has commoditized faster than anyone expected. The gap between frontier and open-source models has narrowed dramatically. The gap between different frontier models, for most practical applications, is smaller than the marketing suggests.
 

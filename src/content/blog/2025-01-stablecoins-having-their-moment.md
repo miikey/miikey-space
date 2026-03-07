@@ -18,9 +18,14 @@ This matters more than most technical improvements. Enterprises — banks, payme
 
 Circle's USDC is the clearest beneficiary. Operating under MiCA authorization in Europe, reserve reporting that's audited and transparent, active engagement with regulators globally — they've done the institutional credibility work that makes enterprise adoption possible.
 
+![World map with glowing connection lines representing global payment corridors](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1000&h=480&fit=crop&auto=format)
+*The corridors where stablecoins shine brightest — US-LatAm, US-Southeast Asia, intra-Asia, US-Africa — are exactly where traditional banking is slowest and most expensive.*
+
 ## The Network Effects Are Reaching Threshold
 
 Stablecoin payment network effects work like other payment networks: the more counterparties you can settle with in stablecoins, the more valuable using stablecoins is. For years, this was a chicken-and-egg problem. Now the network has reached a scale where the value is self-evidently real.
+
+> **USDC settlement volume passed $10 trillion annualized in 2024.** The payments-specific share is growing fast. In remittance corridors, stablecoins cut end-to-end costs from 6–8% to roughly 1.5% — a difference that's decisive for the people who can least afford the old fees.
 
 USDC settlement volume passed $10 trillion annualized in 2024. That's not all payments — it includes DeFi, trading, and speculative flows — but the payments-specific volume is growing as a share of the total. The enterprises using USDC for B2B settlement between trading partners grew significantly.
 
@@ -38,6 +43,9 @@ The use cases that are working:
 
 **Remittance corridors.** The economics for consumer remittance are compelling in corridors where traditional transfer costs are high. A 1.5% end-to-end cost versus 6-8% traditional cost is decisive for remittance customers.
 
+![Person using smartphone for mobile payment in a marketplace](https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1000&h=480&fit=crop&auto=format)
+*Remittance is where the stablecoin value proposition is most tangible — lower fees mean more money arriving to the people who need it most.*
+
 ## What Still Needs to Improve
 
 On/off ramp reliability is the remaining friction point. The stablecoin-to-local-bank-account leg is where things still break: conversion delays, compliance holds, regulatory differences by jurisdiction. The settlement rail is excellent. The last mile to/from traditional bank accounts still needs work.
@@ -49,5 +57,8 @@ Identity and compliance composability is still early. KYC verification, sanction
 The payment infrastructure I'm building toward is one where the choice of settlement asset — fiat, stablecoin, or tokenized asset — is a configuration choice rather than an architectural choice. The rails handle the conversion and the compliance. The businesses just move value.
 
 We're probably 2-3 years from that being fully real. But 2025 is the year it stopped being theoretical and started being the thing enterprises are actually budgeting for.
+
+![Modern cityscape at dusk representing the future of digital finance](https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1000&h=480&fit=crop&auto=format)
+*The future of payments isn't stablecoins versus traditional rails — it's a unified infrastructure where the settlement asset is a configuration choice.*
 
 The stablecoin moment took longer than I expected. It's here now.

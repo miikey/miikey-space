@@ -16,9 +16,14 @@ Here's what I think this actually means — beyond the price action.
 
 The ETF approval changes how Bitcoin is accessed, not what Bitcoin is. But that distinction matters for market structure in ways that play out over years.
 
+![Bitcoin ETF inflows — institutional capital flowing into crypto through traditional brokerage infrastructure](https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=1000&h=480&fit=crop&auto=format)
+*The first week: $10B in assets. The structural barrier between institutional capital and Bitcoin has been removed.*
+
 Previously, getting institutional Bitcoin exposure meant either: dealing with crypto-native custodians (Coinbase Custody, BitGo) with their own compliance requirements, or using regulated futures products (CME Bitcoin futures) with basis risk and rolling costs.
 
 Now, institutional investors can hold Bitcoin exposure through the same brokerage relationships, custody structures, and reporting frameworks they use for equities. The operational friction is gone.
+
+> **$4.6 billion** in trading volume on day one. The pent-up institutional demand was real — and it showed up immediately when the infrastructure gate opened.
 
 The natural consequence: capital that was excluded from Bitcoin due to operational constraints, mandate limitations, or compliance concerns can now participate. Pension funds with mandates that prohibit direct crypto holdings. Wealth managers who couldn't offer clients crypto exposure through standard accounts. Family offices that wanted exposure without the custody headache.
 
@@ -38,6 +43,9 @@ The ETF approval is about Bitcoin as a store of value asset, which is a differen
 
 For the infrastructure layer, the ETF approval matters in a few ways:
 
+![Institutional custody infrastructure — regulated financial services firms managing crypto assets at scale](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1000&h=480&fit=crop&auto=format)
+*Custody at scale is a different problem than retail custody — security, compliance, and reporting requirements multiply.*
+
 **Custody at scale.** Coinbase Custody is the custodian for several of the approved ETFs. Holding tens of billions in Bitcoin for regulated financial institutions at scale is a different security and operational problem than retail custody. This accelerates the development of institutional-grade custody infrastructure.
 
 **Proof of concept for on-chain assets entering traditional finance.** The regulatory and compliance path for bringing a crypto-native asset into traditional financial infrastructure has been cleared. This makes future approvals (Ethereum ETF? Tokenized assets?) more likely and easier.
@@ -48,6 +56,6 @@ For the infrastructure layer, the ETF approval matters in a few ways:
 
 The approval accelerates a trajectory that was already underway: the gradual integration of crypto-native assets into regulated financial infrastructure. The TradFi wrapper is getting put on Bitcoin. Eventually it will be put on stablecoins, tokenized bonds, and tokenized equities.
 
-The endpoint — probably 5-10 years out — is a financial system where the distinction between "crypto" and "traditional finance" is largely irrelevant because the same assets move across both rails.
+> The endpoint — probably **5-10 years out** — is a financial system where the distinction between "crypto" and "traditional finance" is largely irrelevant because the same assets move across both rails.
 
 Building the infrastructure for that convergence is what I'm working on. The ETF approval is a signal that the timeline is real.

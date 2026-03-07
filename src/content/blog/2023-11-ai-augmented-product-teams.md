@@ -10,6 +10,9 @@ In March 2023 I wrote about how LLMs were changing my individual engineering pro
 
 This is what actually happened.
 
+![Team collaborating around laptops with data visualizations on screen](https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1000&h=480&fit=crop&auto=format)
+*Nine months of systematic AI integration across engineering, design, PM, and support*
+
 ## Engineering: Where the Gains Were Real
 
 The productivity gains in engineering were real and measurable. We track features delivered per sprint, time from PR open to merge, and critical bug escape rate. After removing confounds:
@@ -22,6 +25,8 @@ The 35% velocity number gets people excited. The flat bug escape rate deserves m
 
 This is an important distinction. Speed without quality is debt, not progress.
 
+> Feature delivery velocity up **~35%**. Bug escape rate: **unchanged**. We're shipping more features faster — but not more *correct* features faster. Speed without quality is debt, not progress.
+
 ## Product Management: The Interesting Case
 
 I didn't expect AI to matter much for product management. I was wrong.
@@ -31,6 +36,9 @@ The biggest impact was in synthesis work — taking large amounts of user feedba
 The LLM misses things that require domain knowledge or contextual judgment that's hard to articulate. But it catches patterns across large datasets faster than any human. The combination is better than either alone.
 
 Where AI didn't help in PM: strategic prioritization, stakeholder alignment, and understanding the political dynamics of what gets built and why. These require human judgment, relationships, and organizational context that LLMs don't have.
+
+![Data analyst reviewing patterns and insights on a large display](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1000&h=480&fit=crop&auto=format)
+*AI catches patterns across large datasets faster than any human — but the PM still provides the judgment the model can't*
 
 ## The Skill Distribution Question
 
@@ -43,6 +51,9 @@ This is good for some things: junior engineers are more productive, more capable
 It creates challenges too. The tasks that remain clearly senior-level are fewer and less clearly defined. The signaling that used to distinguish seniority — typing speed, pattern memorization, syntax fluency — matters less. What remains is judgment, system thinking, and the ability to evaluate whether LLM-generated solutions are actually good.
 
 We haven't fully worked out the implications for career development. How do you develop judgment if you skip the years of lower-level practice that used to build it? I don't have a good answer yet.
+
+![Mentor and junior developer pair programming at a workstation](https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&h=480&fit=crop&auto=format)
+*The tasks that remain clearly senior-level are fewer — what distinguishes seniority now is judgment, not syntax fluency*
 
 ## What I'd Do Differently
 

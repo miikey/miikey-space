@@ -10,6 +10,9 @@ I've been building in the intersection of fintech, crypto, and AI for seven year
 
 None of those reasons were good enough.
 
+![Person writing in notebook at a minimal desk with morning light](https://images.unsplash.com/photo-1484480153445-674d657e5c04?w=1000&h=480&fit=crop&auto=format)
+*The act of writing forces you to know what you actually think*
+
 ## Why Now
 
 The honest answer: the pace of change in our space has gotten fast enough that I want a record of how I was thinking at each moment.
@@ -19,6 +22,8 @@ In 2019 I wrote internally about why stablecoin settlement rails would matter fo
 Some of those views were right. Some were wrong. All of them were formed in real context, with real stakes, at a moment in time when the outcome wasn't obvious.
 
 That's the kind of writing I want to do. Not the hindsight-obvious retrospective. The in-the-moment, this-is-what-I'm-seeing, here-is-my-reasoning kind.
+
+> The most valuable writing isn't the **hindsight-obvious retrospective** — it's the in-the-moment record: *this is what I'm seeing, here is my reasoning, and the outcome isn't obvious yet.* That's the only kind worth doing.
 
 ## What This Is Not
 
@@ -37,6 +42,9 @@ Currently focused on:
 - Team and organizational design as AI changes what "engineering" means
 
 These are the problems I think about every day. The writing will reflect that.
+
+![Infrastructure blueprint overlaid with digital network connections](https://images.unsplash.com/photo-1518770660439-4636190af475?w=1000&h=480&fit=crop&auto=format)
+*Stablecoin settlement, MPC custody, AI-driven routing — the problems I think about every day*
 
 ## The Handle
 

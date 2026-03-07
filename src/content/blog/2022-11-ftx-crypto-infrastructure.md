@@ -10,11 +10,16 @@ FTX filed for bankruptcy on November 11, 2022. The collapse — from apparent so
 
 I want to write about what this means for the infrastructure we're building and what comes next.
 
+![Cryptocurrency exchange trading screens showing volatile market data](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1000&h=480&fit=crop&auto=format)
+*Exchange infrastructure that looked solvent — until it wasn't*
+
 ## What Actually Failed
 
 FTX failed because of the oldest failure mode in financial history: an institution using customer deposits as its own capital. Allegedly, FTX was lending customer funds to Alameda Research — its affiliated trading firm — which used them for illiquid investments and to cover losses. When confidence collapsed and customers tried to withdraw, there wasn't enough money.
 
 This is not a crypto failure. It's a custodial failure. The same failure mode took down MF Global in 2011, caused the Savings and Loan crisis in the 1980s, and has recurred throughout financial history whenever customer assets are commingled with institutional assets and oversight is inadequate.
+
+> FTX is not a crypto story — it's the **oldest failure mode in financial history**: customer deposits used as institutional capital. The crypto-specific element was the speed. No regulatory guardrails meant confidence broke in **days, not months**.
 
 The crypto-specific element is the speed. Traditional financial institutions have regulatory oversight, reserve requirements, and stress testing designed to catch this before it explodes. FTX operated in a regulatory grey zone with inadequate oversight, so when confidence broke, it broke completely in days rather than months.
 
@@ -25,6 +30,9 @@ The crypto-specific element is the speed. Traditional financial institutions hav
 **Regulatory clarity is now inevitable.** The industry's preference for operating in regulatory grey zones has been invalidated. Customer protection requires regulatory structure. The question now is what form that regulation takes and who shapes it. Operators who engage constructively in that process will be better positioned than those who resist it.
 
 **Self-custody and non-custodial infrastructure get a rethink.** The pitch for holding your own keys — "not your keys, not your coins" — has never been more vindicated. But most users don't want to manage their own keys. This creates an opportunity for better custodial solutions with genuine cryptographic guarantees, rather than promises.
+
+![Digital vault with layered security mechanisms](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1000&h=480&fit=crop&auto=format)
+*The next generation of custody infrastructure must make misappropriation architecturally impossible, not just against policy*
 
 ## What This Means for Payment Infrastructure
 
@@ -43,5 +51,8 @@ The bear market is going to be longer and deeper because of FTX. Capital that mi
 The projects and infrastructure companies that survive the next 18-24 months will be those with real business models, genuine user value, and trustworthy infrastructure design. The speculative layer gets stripped away. The infrastructure layer remains.
 
 I remain convinced that crypto-native payment infrastructure — stablecoin settlement, programmable compliance, self-sovereign custody — represents a genuinely better architecture for moving money globally. FTX makes that argument harder to make in the short term. It doesn't invalidate it.
+
+![Sunrise over a city skyline symbolizing rebuilding and resilience](https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1000&h=480&fit=crop&auto=format)
+*The speculative layer gets stripped away. The infrastructure layer remains.*
 
 Build with integrity. That's the only response.

@@ -14,7 +14,12 @@ I've spent the last two years in the weeds of payment infrastructure — buildin
 
 When you wire money internationally, your bank doesn't have a direct relationship with the recipient's bank. Instead, your money hops through a chain of correspondent banks — sometimes 3, sometimes 5 — each taking a cut and adding latency. It's like routing an email through five different servers, except each server charges you a fee.
 
+![Correspondent banking chain — money hops through multiple intermediaries before reaching the recipient](https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1000&h=500&fit=crop&auto=format)
+*The correspondent banking chain. Every hop = fees + latency.*
+
 SWIFT's GPI initiative has improved tracking visibility, but the fundamental architecture remains the same. You can now watch your money sit in each bank's nostro account. Great. But it's still sitting.
+
+> The average cost of sending $200 internationally is **6.3%** — that's $12.60 gone before the recipient sees a cent. For migrant workers sending remittances home, this isn't a rounding error. It's a month of groceries.
 
 ## Acquirer Limitations in Emerging Markets
 
@@ -24,6 +29,9 @@ We've been building payment rails for Southeast Asia and the problems are even m
 - Limited multi-currency settlement options
 - T+3 to T+5 settlement cycles
 - Compliance requirements that change with little notice
+
+![Southeast Asia payment landscape — fragmented local rails across multiple markets](https://images.unsplash.com/photo-1580048915913-4f8f5cb481c4?w=1000&h=480&fit=crop&auto=format)
+*Local payment methods dominate Southeast Asia — GrabPay, GCash, OVO, PromptPay — but no unified rail.*
 
 The businesses that suffer most are the ones moving money for people who most need it — migrant workers sending remittances home, small exporters getting paid by international buyers, freelancers working for global clients.
 

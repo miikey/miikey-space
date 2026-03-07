@@ -8,6 +8,9 @@ pubDate: 'Jun 10 2025'
 
 In January 2019, I wrote that cross-border payments were fundamentally broken — slow, expensive, and architecturally outdated. Six years later, it's worth revisiting with an honest assessment.
 
+![Global payment network map showing transaction flows between continents](https://images.unsplash.com/photo-1526304526329-e430a0d5afc8?w=1000&h=480&fit=crop&auto=format)
+*The global payment map looks different in 2025 — new rails, new corridors, real volume*
+
 ## What Actually Improved
 
 **Stablecoin settlement corridors are real.** This was the thesis I laid out in 2019 and it's played out. USDC and USDT are handling meaningful B2B settlement volume across specific corridors — particularly US-LatAm, US-Southeast Asia, and intra-Asia. The settlement time has gone from T+2-5 to minutes. The FX transparency has improved dramatically. It's not universal, but it's no longer experimental.
@@ -22,11 +25,16 @@ In January 2019, I wrote that cross-border payments were fundamentally broken �
 
 **Consumer remittance costs are still too high.** The global average cost of sending $200 has dropped from ~7% to ~5% since 2019, according to World Bank data. That's progress, but it's slower than hoped. The corridors where stablecoin-based remittance is active have seen much larger drops. The corridors where it isn't — often the ones that need it most — haven't moved much.
 
+> The global average cost of sending **$200 internationally dropped from ~7% to ~5%** since 2019 — meaningful progress, but far short of the pace needed. The corridors where stablecoin settlement is active saw **much larger drops**. The corridors where it isn't are the ones that need it most.
+
 **Compliance fragmentation.** Every jurisdiction has its own KYC requirements, sanctions lists, reporting obligations, and data localization rules. The compliance cost of operating cross-border payment infrastructure across multiple jurisdictions has actually increased, not decreased. This is the unsexy but critical infrastructure problem.
 
 ## The Architecture That's Emerging
 
 The payment infrastructure that's working best in 2025 has a few common architectural characteristics:
+
+![Network of interconnected payment rails spanning a world map](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1000&h=480&fit=crop&auto=format)
+*Multi-rail architecture: banking rails, stablecoin rails, and local payment rails all serving different transaction profiles*
 
 **Multi-rail by default.** Rather than committing to a single settlement rail, successful infrastructure supports multiple: traditional banking rails for large-value regulated flows, stablecoin rails for speed-optimized corridors, local payment rails for consumer-facing payments. The routing intelligence — which rail to use, for which transaction, in which corridor — is where the product differentiation is.
 
@@ -37,6 +45,9 @@ The payment infrastructure that's working best in 2025 has a few common architec
 ## What I'm Working On Now
 
 The current focus of my work is on the routing intelligence layer — dynamically selecting the optimal payment rail for each transaction based on corridor, amount, speed requirement, cost, and compliance constraints. This is the problem that gets harder as you support more rails and more corridors, and it's where AI-driven optimization is starting to show real value.
+
+![Engineer working on infrastructure code with multiple terminal windows](https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1000&h=480&fit=crop&auto=format)
+*The rails exist. The regulation exists. What remains is optimization, coverage, and reliability.*
 
 The cross-border payment problem isn't solved. But it's more tractable than it was in 2019. The rails exist. The regulation exists. The remaining work is optimization, coverage, and reliability.
 

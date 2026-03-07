@@ -12,6 +12,11 @@ Running an engineering team through a crypto bull market is its own management c
 
 ## The Retention Environment
 
+![Engineering team — navigating talent competition in a bull market with 10x token valuations](https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&h=480&fit=crop&auto=format)
+*When your engineers are getting 3 cold DMs a day with 2x salary offers, everything about management changes.*
+
+> In 2021, the average crypto engineer received **multiple competing offers per month**. Retention wasn't about comp alone — it was about mission clarity and who they were working alongside.
+
 By mid-2021, the talent market for engineers with Solidity experience, DeFi protocol knowledge, or crypto infrastructure background had gone from competitive to surreal. Anonymous protocols were posting job listings with token allocations listed as a primary compensation component. Token allocations valued at millions of dollars at current prices, for roles at projects with no product, no users, and five-person "teams."
 
 The rational short-term financial calculation was often: leave your job, take the token allocation, hope prices hold long enough to vest something meaningful.

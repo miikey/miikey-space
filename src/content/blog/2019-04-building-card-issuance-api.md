@@ -12,9 +12,14 @@ Six months ago we started building a card issuance API. I thought it would take 
 
 Before you can issue a single card, you need a BIN (Bank Identification Number) — the first 6-8 digits that identify the card and route authorization requests. BINs are owned by banks. To issue cards, you either need to be a bank (you're not) or find a bank willing to sponsor your BIN and take on the regulatory liability.
 
+![BIN sponsorship chain — the regulatory structure behind every card you've ever issued](https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1000&h=480&fit=crop&auto=format)
+*Behind every card product: a bank sponsor, a scheme agreement, and a compliance stack most engineers never see.*
+
 This is where the process stalls for most fintech companies.
 
-The BIN sponsor relationship is a principal-agent arrangement. The bank is the principal — they're the licensed issuer on record. You're the agent — you manage the customer relationship and take the fraud risk (sort of). The fee structures are opaque, the negotiation cycles are long (3-6 months typical), and the requirements vary wildly by geography.
+> BIN sponsorship negotiation cycles run **3-6 months on average**. If you start when you think you're six weeks from launch, you will miss your launch by at least a quarter.
+
+The BIN sponsor relationship is a principal-agent arrangement. The bank is the principal — they're the licensed issuer on record. You're the agent — you manage the customer relationship and take the fraud risk (sort of). The fee structures are opaque, the negotiation cycles are long, and the requirements vary wildly by geography.
 
 Things nobody tells you upfront:
 - Some sponsors require minimum monthly transaction volumes you can't hit on day one
@@ -48,6 +53,9 @@ Your API has somewhere between 150-300ms to respond with an Approve or Decline. 
 4. Check for spend controls (if any)
 5. Return an ISO 8583 formatted response
 
+![ISO 8583 message routing — the 1987 protocol that still powers every card authorization on earth](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1000&h=480&fit=crop&auto=format)
+*ISO 8583. Binary, bitmap-indexed, born in 1987. You will learn to love it.*
+
 ISO 8583 is the message format the card networks use. It's a beautiful relic of 1987. Binary, field-based, with a bitmap indicating which fields are present. You will write a lot of code to handle edge cases in how different processors implement it.
 
 ## What We Got Right
@@ -62,4 +70,4 @@ ISO 8583 is the message format the card networks use. It's a beautiful relic of 
 
 Start the BIN sponsorship negotiation on day one, not when you think you're six weeks from launch. And hire someone who has actually done scheme certification before — the institutional knowledge is not in any documentation, it's in people's heads.
 
-Card issuance is fundamentally a regulatory and compliance business that happens to have an API. Build accordingly.
+> Card issuance is fundamentally a **regulatory and compliance business** that happens to have an API. The technology is the easy part. Build accordingly.

@@ -10,6 +10,9 @@ For most of crypto's history, wallet security has been a binary problem: either 
 
 MPC (Multi-Party Computation) wallets represent a genuine third path. After spending the last year building MPC-based key management infrastructure, I want to explain why this matters and how it works.
 
+![Digital padlock on a glowing circuit board representing cryptographic security](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1000&h=480&fit=crop&auto=format)
+*The binary choice between "hold your own keys" and "trust a custodian" defined crypto's first decade. MPC breaks that binary.*
+
 ## The Problem with Traditional Key Management
 
 A private key is a large random number. Whoever possesses it can sign transactions from the associated wallet. The security model is simple: protect the key.
@@ -29,6 +32,8 @@ Multi-Party Computation enables a group of parties to jointly compute a function
 
 In threshold signature schemes (TSS), the private key is mathematically split into "key shares." A threshold number of shares (e.g., 3 of 5) must cooperate to produce a valid signature. No individual share can sign alone, and no individual share reveals the complete key.
 
+> **No single key share can sign alone, and no single share reveals the complete key.** An attacker must compromise multiple independent infrastructure environments simultaneously — a fundamentally different (and much harder) attack vector than stealing one key from one place.
+
 What's powerful about this:
 
 **No single point of compromise.** Compromising one key share (one server, one device, one party) doesn't compromise the wallet. An attacker needs to compromise multiple shares simultaneously — a fundamentally different attack requirement.
@@ -38,6 +43,9 @@ What's powerful about this:
 **Programmable authorization.** Spending limits, time locks, whitelist-only destinations — these can be enforced at the key management layer, before a transaction is ever broadcast.
 
 **Auditable.** Every signing ceremony is logged: who participated, what was approved, when. Full audit trail without relying on internal accounting systems.
+
+![Server room with rows of blinking equipment](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1000&h=480&fit=crop&auto=format)
+*MPC key shares are distributed across independent infrastructure — different servers, different environments, different trust boundaries.*
 
 ## The Architecture We Built
 
@@ -59,5 +67,8 @@ MPC wallet infrastructure is significantly better than alternatives, but it's no
 **Operational complexity.** Managing key share distribution, backup procedures, and recovery protocols is operationally demanding. The human factors matter as much as the technical ones.
 
 **Cross-chain support.** Different chains use different signature schemes (ECDSA, EdDSA, Schnorr). MPC implementations need to support each scheme separately. Cross-chain wallet management requires careful architecture.
+
+![Engineer reviewing security audit logs on a screen](https://images.unsplash.com/photo-1563986768609-322da13575f2?w=1000&h=480&fit=crop&auto=format)
+*Every signing ceremony produces a full audit trail — who participated, what policy was enforced, when. Compliance built into the cryptography.*
 
 Despite these challenges: for any organization managing material value in crypto assets, MPC-based key management is now the standard I'd recommend. The FTX era is over. The infrastructure for trustworthy custody exists. Use it.

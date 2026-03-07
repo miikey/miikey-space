@@ -10,6 +10,9 @@ In early 2020, a colleague sent me the Compound whitepaper. By September I'd dep
 
 Here's what six months of hands-on DeFi actually taught me.
 
+![DeFi liquidity pools and protocol dashboards on multiple screens](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1000&h=480&fit=crop&auto=format)
+*The DeFi dashboard view — tracking positions across Aave, Compound, and Yearn simultaneously*
+
 ## The Infrastructure Is Real
 
 Before going deep, I was skeptical of DeFi as a payments person. I'd seen too many blockchain-for-payments pitches that ignored the actual user experience problems: wallet management, gas fees, transaction finality times, on/off ramps. The gap between the whitepaper and the product was always enormous.
@@ -18,6 +21,8 @@ The DeFi protocols I spent time with — Aave, Compound, Uniswap v2, Yearn — w
 
 What impressed me most wasn't the yields (which I took with healthy skepticism). It was the composability. The way Yearn could programmatically move capital between Aave and Compound to optimize yields, triggered by anyone, settled on-chain with no counterparty required — that's a genuinely new primitive. In traditional finance, building that kind of automated multi-party capital allocation requires legal agreements, custodial relationships, and months of integration work. Here it's a smart contract call.
 
+> In TradFi, multi-party capital allocation requires **months of legal agreements and custodial relationships**. In DeFi, it's a single smart contract call — triggered by anyone, settled on-chain, no counterparty required.
+
 ## What I Got Wrong
 
 I underestimated smart contract risk. Not in an abstract way — I knew it was real — but I didn't internalize it correctly. The bZx flash loan attacks in February 2020 happened before I went deep into the space. By September I'd seen enough protocol exploits and economic attacks to understand that "audited" doesn't mean "safe."
@@ -25,6 +30,9 @@ I underestimated smart contract risk. Not in an abstract way — I knew it was r
 The risk model for DeFi is fundamentally different from traditional finance. In TradFi, operational risk is counterparty risk — you're trusting institutions. In DeFi, it's code risk — you're trusting math and implementation. Code risk is in some ways more legible (the code is public, auditable), but it's also harder for most people to evaluate.
 
 I also underestimated the oracle problem. Price oracles — the mechanisms that bring off-chain price data on-chain — are a critical attack surface that I hadn't fully appreciated until I saw several oracle manipulation attacks up close.
+
+![Close-up of code on a dark screen showing smart contract logic](https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1000&h=480&fit=crop&auto=format)
+*"Audited" doesn't mean "safe" — code risk is more legible than counterparty risk, but harder for most people to evaluate*
 
 ## The Payments Intersection
 
@@ -35,6 +43,9 @@ Specifically: stablecoin settlement. Using USDC or DAI as a settlement asset bet
 The on/off ramp problem is still the bottleneck. Getting money from a bank account into a stablecoin (and back) still requires touching the traditional financial system, with all its friction. But the settlement layer in between? That part can be genuinely better on-chain.
 
 I built a proof-of-concept for this during those six months. Two counterparties in different countries, settling a cross-border transaction in USDC via a smart contract with agreed-upon conditions. The settlement itself — from "conditions met" to "funds available" — took 15 seconds. No correspondent banks. No FX spread. No T+2.
+
+![Global wire transfer and digital payment flows visualized](https://images.unsplash.com/photo-1563986768609-322da13575f2?w=1000&h=480&fit=crop&auto=format)
+*Two counterparties, two countries, USDC settlement in 15 seconds — no correspondent banks, no FX spread, no T+2*
 
 ## What Comes Next
 
