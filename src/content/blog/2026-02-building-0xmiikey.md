@@ -10,8 +10,8 @@ I've been building in the intersection of fintech, crypto, and AI for seven year
 
 None of those reasons were good enough.
 
-![Person writing in notebook at a minimal desk with morning light](/images/blog/writing-fix.jpg)
-*The act of writing forces you to know what you actually think*
+![Team collaborating at a desk — the people and problems that drive the writing](/images/blog/building-0xmiikey-desk.jpg)
+*Writing forces you to know what you actually think — and who you want to think alongside*
 
 ## Why Now
 
