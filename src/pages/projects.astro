@@ -1,0 +1,77 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title="Projects — MIIKEY" description="Things I've built." />
+  </head>
+  <body>
+    <Header />
+    <main style="max-width: 680px; margin: 0 auto; padding: 3rem 1.5rem;">
+
+      <h1 style="font-size: 1.25rem; font-weight: 600; letter-spacing: -0.01em; margin-bottom: 0.5rem;">Projects</h1>
+      <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 2.5rem;">Things I've built, contributed to, or experimented with.</p>
+
+      <ul style="list-style: none;">
+        {[
+          {
+            name: 'defistation-web',
+            desc: 'DeFi analytics and tracking dashboard for BSC ecosystem.',
+            href: 'https://github.com/miikey/defistation-web',
+            tag: 'DeFi',
+          },
+          {
+            name: 'aave-ui',
+            desc: 'UI contributions to the Aave lending protocol.',
+            href: 'https://github.com/miikey/aave-ui',
+            tag: 'DeFi',
+          },
+          {
+            name: 'mento-fi',
+            desc: 'Stablecoin exchange interface for Mento protocol.',
+            href: 'https://github.com/miikey/mento-fi',
+            tag: 'DeFi',
+          },
+          {
+            name: 'basiscash-protocol',
+            desc: 'Algorithmic stablecoin protocol implementation.',
+            href: 'https://github.com/miikey/basiscash-protocol',
+            tag: 'Protocol',
+          },
+          {
+            name: 'ido-contracts',
+            desc: 'Smart contracts for IDO launchpad.',
+            href: 'https://github.com/miikey/ido-contracts',
+            tag: 'Solidity',
+          },
+          {
+            name: 'miikey-space',
+            desc: 'This website. Built with Astro + deployed on Vercel.',
+            href: 'https://github.com/miikey/miikey-space',
+            tag: 'Personal',
+          },
+        ].map((project) => (
+          <li style="border-top: 1px solid var(--border);">
+            <a href={project.href} target="_blank" rel="noopener"
+              style="display: flex; align-items: flex-start; justify-content: space-between; padding: 1rem 0; text-decoration: none; gap: 1rem; flex-wrap: wrap;">
+              <div>
+                <div style="font-size: 0.95rem; color: var(--fg); font-weight: 500; margin-bottom: 0.25rem;">{project.name}</div>
+                <div style="font-size: 0.875rem; color: var(--muted);">{project.desc}</div>
+              </div>
+              <span style="font-size: 0.75rem; color: var(--muted); background: var(--border); padding: 0.2rem 0.6rem; border-radius: 999px; white-space: nowrap; margin-top: 0.1rem;">
+                {project.tag}
+              </span>
+            </a>
+          </li>
+        ))}
+        <li style="border-top: 1px solid var(--border);"></li>
+      </ul>
+
+    </main>
+    <Footer />
+  </body>
+</html>
