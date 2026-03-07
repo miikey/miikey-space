@@ -1,0 +1,107 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 6);
+
+function fmt(d: Date) {
+  return d.toISOString().slice(0, 10);
+}
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <BaseHead title="Layout C — Terminal" description="Preview" />
+  <style>
+    * { font-family: var(--font-mono) !important; }
+    body { background: #060606; color: #00dc82; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem 5rem; }
+    .prompt { color: #00dc82; opacity: 0.5; }
+    .cmd { color: #00dc82; }
+    .dim { color: #2a6e52; }
+    .white { color: #ccc; }
+    .block { margin-bottom: 2.5rem; }
+    .row-t { font-size: 0.85rem; color: #ccc; text-decoration: none; }
+    .row-t:hover { color: #00dc82; }
+    .line { display: flex; gap: 1.5rem; align-items: baseline; padding: 0.3rem 0; }
+    .tag-t { font-size: 0.7rem; color: #2a6e52; }
+    a { color: inherit; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <!-- Preview badge -->
+  <div style="background:rgba(0,220,130,0.08);border-bottom:1px solid rgba(0,220,130,0.15);padding:0.6rem 1.5rem;display:flex;align-items:center;justify-content:space-between;">
+    <span style="font-size:0.7rem;color:#00dc82;">Preview — Layout C: Terminal</span>
+    <div style="display:flex;gap:1.5rem;">
+      <a href="/preview-b" style="font-size:0.7rem;color:#2a6e52;">← Layout B</a>
+      <a href="/preview-d" style="font-size:0.7rem;color:#2a6e52;">Layout D →</a>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <!-- Boot -->
+    <div class="block" style="font-size:0.78rem;">
+      <div class="dim">$ whoami</div>
+      <div style="margin:0.5rem 0 0 0;">
+        <span class="white">0xMiikey</span> <span class="dim">// Co-founder & CTO, UQPAY</span>
+      </div>
+      <div style="margin-top:0.25rem;color:#2a6e52;">// Building at the intersection of fintech, crypto & AI</div>
+    </div>
+
+    <div style="border-top:1px solid #0d2e1e;margin-bottom:2.5rem;"></div>
+
+    <!-- Writing -->
+    <div class="block">
+      <div style="font-size:0.7rem;color:#2a6e52;margin-bottom:1rem;">$ ls writing/ <span style="color:#00dc82">--sort=date</span></div>
+      {posts.map(p => (
+        <div class="line">
+          <span class="dim" style="font-size:0.72rem;white-space:nowrap;">{fmt(p.data.pubDate)}</span>
+          <a href={`/blog/${p.id}/`} class="row-t">{p.data.title}</a>
+        </div>
+      ))}
+      <div style="margin-top:0.75rem;"><a href="/blog" style="font-size:0.72rem;color:#2a6e52;">→ all posts</a></div>
+    </div>
+
+    <div style="border-top:1px solid #0d2e1e;margin-bottom:2.5rem;"></div>
+
+    <!-- Projects -->
+    <div class="block">
+      <div style="font-size:0.7rem;color:#2a6e52;margin-bottom:1rem;">$ ls projects/ <span style="color:#00dc82">--long</span></div>
+      {[
+        {name:'uqpay', desc:'Payment infrastructure for the borderless economy', tag:'[live]', href:'/projects/uqpay'},
+        {name:'clearchain', desc:'Blockchain settlement layer, T+2 → real-time', tag:'[building]', href:'/projects/clearchain'},
+        {name:'riskguard', desc:'AI fraud detection for card acquiring', tag:'[building]', href:'/projects/riskguard'},
+        {name:'threshold-signer', desc:'MPC wallet infrastructure, institutional custody', tag:'[building]', href:'/projects/threshold-signer'},
+        {name:'cardos', desc:'Programmable card issuance platform', tag:'[building]', href:'/projects/cardos'},
+      ].map(p => (
+        <div class="line">
+          <span class="dim" style="font-size:0.72rem;white-space:nowrap;">{p.tag}</span>
+          <a href={p.href} style="font-size:0.85rem;color:#ccc;text-decoration:none;" onmouseover="this.style.color='#00dc82'" onmouseout="this.style.color='#ccc'">{p.name}</a>
+          <span class="dim" style="font-size:0.72rem;"># {p.desc}</span>
+        </div>
+      ))}
+    </div>
+
+    <div style="border-top:1px solid #0d2e1e;margin-bottom:2.5rem;"></div>
+
+    <!-- Links -->
+    <div style="font-size:0.75rem;">
+      <div class="dim" style="margin-bottom:0.5rem;">$ echo $LINKS</div>
+      <a href="https://twitter.com/0xmiikey" style="color:#2a6e52;margin-right:2rem;">twitter://0xmiikey</a>
+      <a href="https://github.com/miikey" style="color:#2a6e52;">github://miikey</a>
+    </div>
+
+    <!-- Cursor -->
+    <div style="margin-top:3rem;font-size:0.85rem;">
+      <span class="prompt">$ </span><span style="display:inline-block;width:9px;height:1.1em;background:#00dc82;vertical-align:middle;animation:blink 1s step-end infinite;"></span>
+    </div>
+  </div>
+
+  <style>
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+  </style>
+</body>
+</html>
