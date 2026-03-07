@@ -33,4 +33,4 @@ The net effect: T+2 becomes T+0. The 2-4% correspondent fee becomes a 0.1-0.3% l
 
 ## Status
 
-Currently in private beta with three payment network participants across two corridors (US-Philippines, Singapore-Indonesia). Processing a growing share of UQPAY's cross-corridor settlement volume.
+Currently in private beta with three payment network participants across two corridors (US-Philippines, Singapore-Indonesia). Processing a growing share of our cross-corridor settlement volume.

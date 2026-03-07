@@ -1,6 +1,6 @@
 ---
 title: 'LiquidBridge'
-description: 'Cross-chain liquidity bridge for stablecoin settlements across EVM and non-EVM chains. Powers real-time FX for UQPAY remittance corridors.'
+description: 'Cross-chain liquidity bridge for stablecoin settlements across EVM and non-EVM chains. Powers real-time FX for cross-border remittance corridors.'
 tag: 'DeFi'
 status: 'Building'
 year: '2024–present'
@@ -30,4 +30,4 @@ LiquidBridge is a cross-chain liquidity protocol designed specifically for payme
 
 ## Current Usage
 
-Powering cross-chain settlement for specific UQPAY corridors where different chains offer optimal liquidity or cost. Live on Ethereum, Base, and Polygon. Solana support in development.
+Powering cross-chain settlement for specific payment corridors where different chains offer optimal liquidity or cost. Live on Ethereum, Base, and Polygon. Solana support in development.

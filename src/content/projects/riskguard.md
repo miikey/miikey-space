@@ -32,7 +32,7 @@ RiskGuard uses ML for what it's good at (anomaly scoring, pattern detection acro
 
 ## Results
 
-On UQPAY's acquiring volume:
+On our acquiring volume:
 - **3x improvement** in true fraud detection rate versus the previous rule-only system
 - **40% reduction** in false positive rate (legitimate transactions declined)
 - Authorization latency impact: median +12ms, p99 +38ms

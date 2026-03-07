@@ -6,7 +6,7 @@ status: 'Building'
 year: '2022–present'
 ---
 
-Every payment that enters UQPAY's infrastructure faces a routing decision: which acquirer, which currency path, which settlement rail, and what to do if the primary route fails. At scale, these decisions have material impact on approval rates, processing cost, and merchant revenue.
+Every payment that enters our infrastructure faces a routing decision: which acquirer, which currency path, which settlement rail, and what to do if the primary route fails. At scale, these decisions have material impact on approval rates, processing cost, and merchant revenue.
 
 PayRoute is the routing intelligence layer — a system that makes per-transaction routing decisions based on real-time signals and historical performance data.
 
@@ -28,7 +28,7 @@ Approval rates vary by acquirer, card type, geography, transaction amount, and t
 
 **Outcome feedback** — every routing decision and its outcome (approved, declined, timed out) feeds back into the model. Models are updated continuously.
 
-## Results on UQPAY Volume
+## Results
 
 - **+2.3 percentage points** improvement in overall approval rate versus static routing
 - **-0.18%** reduction in average processing cost through cost-aware routing

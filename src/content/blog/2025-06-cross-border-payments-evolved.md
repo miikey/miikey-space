@@ -34,7 +34,7 @@ The payment infrastructure that's working best in 2025 has a few common architec
 
 ## What I'm Working On Now
 
-At UQPAY, the current focus is on the routing intelligence layer — dynamically selecting the optimal payment rail for each transaction based on corridor, amount, speed requirement, cost, and compliance constraints. This is the problem that gets harder as you support more rails and more corridors, and it's where AI-driven optimization is starting to show real value.
+The current focus of my work is on the routing intelligence layer — dynamically selecting the optimal payment rail for each transaction based on corridor, amount, speed requirement, cost, and compliance constraints. This is the problem that gets harder as you support more rails and more corridors, and it's where AI-driven optimization is starting to show real value.
 
 The cross-border payment problem isn't solved. But it's more tractable than it was in 2019. The rails exist. The regulation exists. The remaining work is optimization, coverage, and reliability.
 

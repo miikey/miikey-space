@@ -24,7 +24,7 @@ USDC settlement volume passed $10 trillion annualized in 2024. That's not all pa
 
 The corridors where stablecoins are most active: US-LatAm, US-Southeast Asia, intra-Southeast Asia, and increasingly US-Africa. These are corridors where traditional banking is slow, expensive, or unreliable. The problem-solution fit is tightest there.
 
-## What We're Seeing in UQPAY Infrastructure
+## What We're Seeing in Practice
 
 From where we sit, the volume tells the story. Merchants and businesses using our settlement infrastructure in stablecoins have grown from a small experiment to a real portion of our volume.
 

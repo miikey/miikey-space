@@ -28,7 +28,7 @@ It's a working document. A record of how I think about building payment infrastr
 
 ## What I'm Working On
 
-Currently at UQPAY, focused on:
+Currently focused on:
 - Scaling cross-border stablecoin settlement infrastructure
 - MPC-based custody for institutional payment operations  
 - AI-driven payment routing and risk decisioning

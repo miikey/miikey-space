@@ -38,7 +38,7 @@ const posts = (await getCollection('blog'))
     <aside class="sidebar">
       <div style="margin-bottom:auto">
         <a href="/" style="font-family:var(--font-mono);font-size:0.9rem;color:var(--accent);text-decoration:none;display:block;margin-bottom:2rem;">0xMiikey</a>
-        <p style="font-size:0.82rem;color:var(--muted);line-height:1.7;margin-bottom:1.5rem;">Engineer turned founder. Co-building UQPAY at the intersection of fintech, crypto & AI.</p>
+        <p style="font-size:0.82rem;color:var(--muted);line-height:1.7;margin-bottom:1.5rem;">Engineer turned founder. Co-building payment infrastructure at the intersection of fintech, crypto & AI.</p>
         <nav>
           <a href="#" class="nav-item">Writing</a>
           <a href="#" class="nav-item">Projects</a>
@@ -69,7 +69,7 @@ const posts = (await getCollection('blog'))
       <div class="section-label">Projects</div>
       <ul style="list-style:none;">
         {[
-          {name:'UQPAY', desc:'Payment infrastructure for the borderless economy.', tag:'Fintech', href:'/projects/uqpay'},
+          {
           {name:'ClearChain', desc:'Blockchain settlement layer for cross-border networks.', tag:'Protocol', href:'/projects/clearchain'},
           {name:'RiskGuard', desc:'AI fraud detection for card acquiring pipelines.', tag:'AI · Risk', href:'/projects/riskguard'},
           {name:'Threshold Signer', desc:'MPC wallet infrastructure for institutional key management.', tag:'MPC', href:'/projects/threshold-signer'},
