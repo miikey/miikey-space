@@ -19,6 +19,7 @@
 :root {
   --bg: #0a0a0a;
   --bg-2: #111111;
+  --bg-nav: rgba(10,10,10,0.85);
   --fg: #e8e8e8;
   --muted: #666666;
   --muted-2: #444444;
@@ -28,6 +29,18 @@
 
   --font-sans: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'Geist Mono', 'JetBrains Mono', monospace;
+}
+
+[data-theme="light"] {
+  --bg: #ffffff;
+  --bg-2: #f5f5f5;
+  --bg-nav: rgba(255,255,255,0.88);
+  --fg: #111111;
+  --muted: #888888;
+  --muted-2: #bbbbbb;
+  --border: #e5e5e5;
+  --accent: #009b5c;
+  --accent-dim: rgba(0, 155, 92, 0.10);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
