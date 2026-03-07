@@ -1,6 +1,6 @@
 ---
-title: 'The Acquiring Landscape: What They Don't Tell You'
-description: 'A frank breakdown of payment acquiring — interchange, scheme fees, merchant discount rates, and why the numbers rarely work out the way the sales deck says.'
+title: "The Acquiring Landscape: What They Don't Tell You"
+description: "A frank breakdown of payment acquiring — interchange, scheme fees, merchant discount rates, and why the numbers rarely work out the way the sales deck says."
 pubDate: 'Sep 18 2019'
 ---
 
