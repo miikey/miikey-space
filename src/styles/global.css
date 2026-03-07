@@ -37,14 +37,12 @@
   --bg-2: #f7f7f7;
   --bg-nav: rgba(255,255,255,0.92);
   --fg: #0a0a0a;
-  --muted: #555555;
-  --muted-2: #888888;
+  --muted: #333333;
+  --muted-2: #666666;
   --border: #e0e0e0;
   --accent: #008a50;
   --accent-dim: rgba(0, 138, 80, 0.10);
   --prose-fg: #1a1a1a;
-  --muted: #333333;
-  --muted-2: #666666;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -102,7 +100,7 @@ a:hover { color: var(--accent); }
 
 .prose a {
   color: var(--accent);
-  border-bottom: 1px solid rgba(0, 220, 130, 0.3);
+  border-bottom: 1px solid var(--accent-dim);
   padding-bottom: 1px;
 }
 

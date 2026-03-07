@@ -29,7 +29,7 @@ import Header from '../components/Header.astro';
               <div style="flex: 1; min-width: 0;">
                 <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.3rem;">
                   <span style="font-size: 0.95rem; color: var(--fg); font-weight: 500;">{project.name}</span>
-                  <span style={`font-size: 0.6rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.05em; padding: 0.15rem 0.5rem; border-radius: 999px; ${project.status === 'Live' ? 'color: var(--accent); background: var(--accent-dim); border: 1px solid rgba(0,220,130,0.2);' : 'color: var(--muted); background: var(--bg-2); border: 1px solid var(--border);'}`}>{project.status}</span>
+                  <span style={`font-size: 0.6rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.05em; padding: 0.15rem 0.5rem; border-radius: 999px; ${project.status === 'Live' ? 'color: var(--accent); background: var(--accent-dim); border: 1px solid var(--accent-dim);' : 'color: var(--muted); background: var(--bg-2); border: 1px solid var(--border);'}`}>{project.status}</span>
                 </div>
                 <div style="font-size: 0.875rem; color: var(--muted); line-height: 1.6;">{project.desc}</div>
               </div>
