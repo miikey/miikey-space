@@ -1,7 +1,7 @@
 ---
 title: 'ChatGPT Changed My Engineering Process. Here Is How.'
 description: 'Three months into daily LLM use, here is what has actually changed in how I build — not the hype, the real behavioral shifts and where the limits are.'
-heroImage: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/llm-engineering-01.jpg'
 heroAlt: 'AI language model'
 pubDate: 'Mar 21 2023'
 ---
@@ -10,7 +10,7 @@ ChatGPT launched in November 2022. By February 2023, GitHub Copilot was in wides
 
 Three months of serious daily use is enough time for the novelty to wear off and the real patterns to emerge. Here's an honest account of what has actually changed.
 
-![Developer writing code at a laptop](https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1000&h=480&fit=crop&auto=format)
+![Developer writing code at a laptop](/images/blog/2023-03-llm-changed-engineering-process-inline-01.jpg)
 *LLM-assisted development has changed the texture of daily coding work — not by replacing judgment, but by accelerating the mechanical parts.*
 
 ## What Changed Immediately
@@ -39,7 +39,7 @@ This is the thing nobody talks about enough: LLMs don't tell you when they're wr
 
 We added a practice: any LLM-generated code that goes into production gets flagged as such in the PR. Not as a criticism — as context. It means the reviewer knows to apply more scrutiny to certain patterns.
 
-![Engineers collaborating on code review at whiteboard](https://images.unsplash.com/photo-1516116216-4ade5f05d95a?w=1000&h=480&fit=crop&auto=format)
+![Engineers collaborating on code review at whiteboard](/images/blog/llm-code-fix.jpg)
 *Team practices around LLM-generated code matter as much as the tools themselves — shared norms prevent the confident-but-wrong failure mode.*
 
 ## The Bigger Picture
@@ -50,5 +50,5 @@ The engineers who will thrive aren't the ones who resist these tools or the ones
 
 That's a judgment skill. It's not that different from knowing when to use a library and when to write your own.
 
-![Close-up of code on a dark terminal screen](https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1000&h=480&fit=crop&auto=format)
+![Close-up of code on a dark terminal screen](/images/blog/2023-03-llm-changed-engineering-process-inline-03.jpg)
 *The code still has to work. LLMs change how fast you get to a working draft — they don't change what "working" means.*

@@ -1,7 +1,7 @@
 ---
 title: 'When Algorithms Fail: Lessons from LUNA'
 description: 'The Terra/LUNA collapse erased $40 billion in value in 72 hours. As someone who had tracked algorithmic stablecoins closely, here is what I think we should learn from it.'
-heroImage: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/luna-collapse-01.jpg'
 heroAlt: 'Market chart crash'
 pubDate: 'Jun 08 2022'
 ---
@@ -10,7 +10,7 @@ In May 2022, TerraUSD (UST) — the algorithmic stablecoin backed by LUNA — lo
 
 I had been tracking algorithmic stablecoin designs closely since 2020. I want to write honestly about what happened, what I got right in my skepticism, and what I got wrong in underestimating the scale of the potential failure.
 
-![Stock market crash displayed on trading screens](https://images.unsplash.com/photo-1535320903710-d993d3d77d29?w=1000&h=480&fit=crop&auto=format)
+![Stock market crash displayed on trading screens](/images/blog/2022-06-luna-collapse-lessons-inline-01.jpg)
 *$40 billion erased in 72 hours — the LUNA collapse was the most dramatic stress test of mechanism design in crypto history.*
 
 ## What Happened
@@ -39,7 +39,7 @@ UST at $18 billion circulating supply was a different scale. The contagion — t
 
 I also underestimated how many sophisticated investors had convinced themselves that the mechanism was sound. When the collapse happened, the shock was not just financial but psychological. Smart people had built large positions on a flawed premise.
 
-![Dominos falling in sequence representing financial contagion](https://images.unsplash.com/photo-1586769852044-692d6e3703f0?w=1000&h=480&fit=crop&auto=format)
+![Dominos falling in sequence representing financial contagion](/images/blog/2022-06-luna-collapse-lessons-inline-02.jpg)
 *Contagion was the multiplier: funds holding LUNA, protocols integrated with UST, and market confidence all fell in sequence.*
 
 ## What the Payments Industry Should Take Away
@@ -56,7 +56,7 @@ My updated view: the stablecoin designs with the best long-term survival prospec
 
 For payment infrastructure, I'm only comfortable building on fiat-backed stablecoins at this point. The settlement reliability guarantee needs to be unconditional.
 
-![Physical US dollar bills representing fiat backing](https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1000&h=480&fit=crop&auto=format)
+![Physical US dollar bills representing fiat backing](/images/blog/2022-06-luna-collapse-lessons-inline-03.jpg)
 *Boring wins: fiat-backed stablecoins with real dollars in real bank accounts remain the only design I'd build payment infrastructure on.*
 
 The LUNA collapse was a $40 billion stress test of a mechanism design. The lesson is expensive. We should actually learn from it.

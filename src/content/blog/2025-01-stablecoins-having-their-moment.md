@@ -1,7 +1,7 @@
 ---
 title: 'Stablecoins Are Finally Having Their Moment'
 description: 'After years of being the infrastructure story nobody wanted to write about, stablecoins are going mainstream. Here is why 2025 feels different and what the payment infrastructure implications are.'
-heroImage: 'https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/stablecoins-01.jpg'
 heroAlt: 'Stablecoin USDC digital currency'
 pubDate: 'Jan 29 2025'
 ---
@@ -18,7 +18,7 @@ This matters more than most technical improvements. Enterprises — banks, payme
 
 Circle's USDC is the clearest beneficiary. Operating under MiCA authorization in Europe, reserve reporting that's audited and transparent, active engagement with regulators globally — they've done the institutional credibility work that makes enterprise adoption possible.
 
-![World map with glowing connection lines representing global payment corridors](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1000&h=480&fit=crop&auto=format)
+![World map with glowing connection lines representing global payment corridors](/images/blog/2025-01-stablecoins-having-their-moment-inline-01.jpg)
 *The corridors where stablecoins shine brightest — US-LatAm, US-Southeast Asia, intra-Asia, US-Africa — are exactly where traditional banking is slowest and most expensive.*
 
 ## The Network Effects Are Reaching Threshold
@@ -43,7 +43,7 @@ The use cases that are working:
 
 **Remittance corridors.** The economics for consumer remittance are compelling in corridors where traditional transfer costs are high. A 1.5% end-to-end cost versus 6-8% traditional cost is decisive for remittance customers.
 
-![Person using smartphone for mobile payment in a marketplace](https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1000&h=480&fit=crop&auto=format)
+![Person using smartphone for mobile payment in a marketplace](/images/blog/2025-01-stablecoins-having-their-moment-inline-02.jpg)
 *Remittance is where the stablecoin value proposition is most tangible — lower fees mean more money arriving to the people who need it most.*
 
 ## What Still Needs to Improve
@@ -58,7 +58,7 @@ The payment infrastructure I'm building toward is one where the choice of settle
 
 We're probably 2-3 years from that being fully real. But 2025 is the year it stopped being theoretical and started being the thing enterprises are actually budgeting for.
 
-![Modern cityscape at dusk representing the future of digital finance](https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1000&h=480&fit=crop&auto=format)
+![Modern cityscape at dusk representing the future of digital finance](/images/blog/2025-01-stablecoins-having-their-moment-inline-03.jpg)
 *The future of payments isn't stablecoins versus traditional rails — it's a unified infrastructure where the settlement asset is a configuration choice.*
 
 The stablecoin moment took longer than I expected. It's here now.

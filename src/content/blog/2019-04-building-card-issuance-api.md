@@ -1,7 +1,7 @@
 ---
 title: 'Building a Card Issuance API: What Nobody Tells You'
 description: 'Card issuance sounds straightforward until you actually try to build it. Here is what six months of BIN sponsorship negotiations, EMV certification, and scheme compliance actually looks like.'
-heroImage: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/card-issuance-api-01.jpg'
 heroAlt: 'Credit card payment terminal'
 pubDate: 'Apr 03 2019'
 ---
@@ -12,7 +12,7 @@ Six months ago we started building a card issuance API. I thought it would take 
 
 Before you can issue a single card, you need a BIN (Bank Identification Number) — the first 6-8 digits that identify the card and route authorization requests. BINs are owned by banks. To issue cards, you either need to be a bank (you're not) or find a bank willing to sponsor your BIN and take on the regulatory liability.
 
-![BIN sponsorship chain — the regulatory structure behind every card you've ever issued](https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1000&h=480&fit=crop&auto=format)
+![BIN sponsorship chain — the regulatory structure behind every card you've ever issued](/images/blog/2019-04-building-card-issuance-api-inline-01.jpg)
 *Behind every card product: a bank sponsor, a scheme agreement, and a compliance stack most engineers never see.*
 
 This is where the process stalls for most fintech companies.
@@ -53,7 +53,7 @@ Your API has somewhere between 150-300ms to respond with an Approve or Decline. 
 4. Check for spend controls (if any)
 5. Return an ISO 8583 formatted response
 
-![ISO 8583 message routing — the 1987 protocol that still powers every card authorization on earth](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1000&h=480&fit=crop&auto=format)
+![ISO 8583 message routing — the 1987 protocol that still powers every card authorization on earth](/images/blog/2019-04-building-card-issuance-api-inline-02.jpg)
 *ISO 8583. Binary, bitmap-indexed, born in 1987. You will learn to love it.*
 
 ISO 8583 is the message format the card networks use. It's a beautiful relic of 1987. Binary, field-based, with a bitmap indicating which fields are present. You will write a lot of code to handle edge cases in how different processors implement it.

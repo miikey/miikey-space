@@ -1,7 +1,7 @@
 ---
 title: 'Why I Started Writing: A Note on 0xMiikey'
 description: 'Seven years of building payment infrastructure, crypto protocols, and AI products. Here is why I finally started writing it down.'
-heroImage: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/building-0xmiikey-01.jpg'
 heroAlt: 'Writing and building'
 pubDate: 'Feb 03 2026'
 ---
@@ -10,7 +10,7 @@ I've been building in the intersection of fintech, crypto, and AI for seven year
 
 None of those reasons were good enough.
 
-![Person writing in notebook at a minimal desk with morning light](https://images.unsplash.com/photo-1484480153445-674d657e5c04?w=1000&h=480&fit=crop&auto=format)
+![Person writing in notebook at a minimal desk with morning light](/images/blog/writing-fix.jpg)
 *The act of writing forces you to know what you actually think*
 
 ## Why Now
@@ -43,7 +43,7 @@ Currently focused on:
 
 These are the problems I think about every day. The writing will reflect that.
 
-![Infrastructure blueprint overlaid with digital network connections](https://images.unsplash.com/photo-1518770660439-4636190af475?w=1000&h=480&fit=crop&auto=format)
+![Infrastructure blueprint overlaid with digital network connections](/images/blog/2026-02-building-0xmiikey-inline-02.jpg)
 *Stablecoin settlement, MPC custody, AI-driven routing — the problems I think about every day*
 
 ## The Handle

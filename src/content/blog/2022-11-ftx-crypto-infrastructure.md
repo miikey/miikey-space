@@ -1,7 +1,7 @@
 ---
 title: 'FTX and What It Means for Crypto Infrastructure'
 description: 'The FTX collapse is the largest exchange failure in crypto history. But the lesson is not that crypto is broken. It is that custody and infrastructure design matter more than most people realized.'
-heroImage: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/ftx-infrastructure-01.jpg'
 heroAlt: 'Crypto infrastructure'
 pubDate: 'Nov 16 2022'
 ---
@@ -10,7 +10,7 @@ FTX filed for bankruptcy on November 11, 2022. The collapse — from apparent so
 
 I want to write about what this means for the infrastructure we're building and what comes next.
 
-![Cryptocurrency exchange trading screens showing volatile market data](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1000&h=480&fit=crop&auto=format)
+![Cryptocurrency exchange trading screens showing volatile market data](/images/blog/2022-11-ftx-crypto-infrastructure-inline-01.jpg)
 *Exchange infrastructure that looked solvent — until it wasn't*
 
 ## What Actually Failed
@@ -31,7 +31,7 @@ The crypto-specific element is the speed. Traditional financial institutions hav
 
 **Self-custody and non-custodial infrastructure get a rethink.** The pitch for holding your own keys — "not your keys, not your coins" — has never been more vindicated. But most users don't want to manage their own keys. This creates an opportunity for better custodial solutions with genuine cryptographic guarantees, rather than promises.
 
-![Digital vault with layered security mechanisms](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1000&h=480&fit=crop&auto=format)
+![Digital vault with layered security mechanisms](/images/blog/2022-11-ftx-crypto-infrastructure-inline-02.jpg)
 *The next generation of custody infrastructure must make misappropriation architecturally impossible, not just against policy*
 
 ## What This Means for Payment Infrastructure
@@ -52,7 +52,7 @@ The projects and infrastructure companies that survive the next 18-24 months wil
 
 I remain convinced that crypto-native payment infrastructure — stablecoin settlement, programmable compliance, self-sovereign custody — represents a genuinely better architecture for moving money globally. FTX makes that argument harder to make in the short term. It doesn't invalidate it.
 
-![Sunrise over a city skyline symbolizing rebuilding and resilience](https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1000&h=480&fit=crop&auto=format)
+![Sunrise over a city skyline symbolizing rebuilding and resilience](/images/blog/2022-11-ftx-crypto-infrastructure-inline-03.jpg)
 *The speculative layer gets stripped away. The infrastructure layer remains.*
 
 Build with integrity. That's the only response.

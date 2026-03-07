@@ -1,14 +1,14 @@
 ---
 title: 'Cross-Border Payments in 2025: What Actually Changed'
 description: 'Six years after writing about why cross-border payments are broken, here is an honest assessment of what has improved, what has not, and where the next inflection points are.'
-heroImage: 'https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/cross-border-evolved-01.jpg'
 heroAlt: 'Cross-border payments evolution'
 pubDate: 'Jun 10 2025'
 ---
 
 In January 2019, I wrote that cross-border payments were fundamentally broken — slow, expensive, and architecturally outdated. Six years later, it's worth revisiting with an honest assessment.
 
-![Global payment network map showing transaction flows between continents](https://images.unsplash.com/photo-1526304526329-e430a0d5afc8?w=1000&h=480&fit=crop&auto=format)
+![Global payment network map showing transaction flows between continents](/images/blog/crossborder-fix.jpg)
 *The global payment map looks different in 2025 — new rails, new corridors, real volume*
 
 ## What Actually Improved
@@ -33,7 +33,7 @@ In January 2019, I wrote that cross-border payments were fundamentally broken �
 
 The payment infrastructure that's working best in 2025 has a few common architectural characteristics:
 
-![Network of interconnected payment rails spanning a world map](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1000&h=480&fit=crop&auto=format)
+![Network of interconnected payment rails spanning a world map](/images/blog/2025-06-cross-border-payments-evolved-inline-02.jpg)
 *Multi-rail architecture: banking rails, stablecoin rails, and local payment rails all serving different transaction profiles*
 
 **Multi-rail by default.** Rather than committing to a single settlement rail, successful infrastructure supports multiple: traditional banking rails for large-value regulated flows, stablecoin rails for speed-optimized corridors, local payment rails for consumer-facing payments. The routing intelligence — which rail to use, for which transaction, in which corridor — is where the product differentiation is.
@@ -46,7 +46,7 @@ The payment infrastructure that's working best in 2025 has a few common architec
 
 The current focus of my work is on the routing intelligence layer — dynamically selecting the optimal payment rail for each transaction based on corridor, amount, speed requirement, cost, and compliance constraints. This is the problem that gets harder as you support more rails and more corridors, and it's where AI-driven optimization is starting to show real value.
 
-![Engineer working on infrastructure code with multiple terminal windows](https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1000&h=480&fit=crop&auto=format)
+![Engineer working on infrastructure code with multiple terminal windows](/images/blog/2025-06-cross-border-payments-evolved-inline-03.jpg)
 *The rails exist. The regulation exists. What remains is optimization, coverage, and reliability.*
 
 The cross-border payment problem isn't solved. But it's more tractable than it was in 2019. The rails exist. The regulation exists. The remaining work is optimization, coverage, and reliability.

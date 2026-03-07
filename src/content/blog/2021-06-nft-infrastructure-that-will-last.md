@@ -1,7 +1,7 @@
 ---
 title: 'NFTs Beyond the Hype: The Infrastructure That Will Last'
 description: 'Everyone is looking at the JPEG prices. I am more interested in what on-chain ownership primitives mean for payments, identity, and programmable assets.'
-heroImage: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/nft-infrastructure-01.jpg'
 heroAlt: 'Digital art NFT'
 pubDate: 'Jun 29 2021'
 ---
@@ -12,7 +12,7 @@ I'm not going to write another "is this a bubble" piece. I'm more interested in 
 
 ## What NFTs Actually Are (At the Infrastructure Layer)
 
-![On-chain ownership — the cryptographic proof behind NFT provenance and programmable assets](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1000&h=480&fit=crop&auto=format)
+![On-chain ownership — the cryptographic proof behind NFT provenance and programmable assets](/images/blog/2021-06-nft-infrastructure-that-will-last-inline-01.jpg)
 *The JPEG is irrelevant. The ownership primitive — verifiable, transferable, programmable — is what matters long term.*
 
 > NFTs are not about digital art. They are about **programmable ownership** — the first time a digital asset can be provably scarce, transferable, and composable without a central registry.

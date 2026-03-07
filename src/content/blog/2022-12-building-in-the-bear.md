@@ -1,7 +1,7 @@
 ---
 title: 'Building in the Bear: Why This Is the Best Time'
 description: 'Two collapses in one year. A market down 70%. Regulatory pressure everywhere. This is exactly when the infrastructure worth building gets built.'
-heroImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/building-bear-01.jpg'
 heroAlt: 'Bear market building'
 pubDate: 'Dec 05 2022'
 ---
@@ -14,7 +14,7 @@ Here's why.
 
 ## The Speculative Layer Is Gone
 
-![Building in the bear — infrastructure work when the price noise disappears](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1000&h=480&fit=crop&auto=format)
+![Building in the bear — infrastructure work when the price noise disappears](/images/blog/2022-12-building-in-the-bear-inline-01.jpg)
 *When speculation retreats, the builders who remain are the ones who were never here for the price.*
 
 > Coinbase, Kraken, Chainalysis — every major crypto infrastructure company was **built or scaled in a bear market**. The pattern is consistent. Bears build; bulls speculate.

@@ -1,7 +1,7 @@
 ---
 title: 'DeFi Summer Retrospective: What Survived'
 description: 'DeFi Summer 2020 produced a thousand projects and a billion dollars of value locked. Twelve months later, here is an honest look at what actually survived and why.'
-heroImage: 'https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/defi-summer-01.jpg'
 heroAlt: 'Crypto DeFi charts'
 pubDate: 'Feb 10 2021'
 ---
@@ -12,7 +12,7 @@ Twelve months out, the signal is starting to separate from the noise. Here's my 
 
 ## What Survived
 
-![DeFi blue chips — Aave, Uniswap and Curve still standing after hundreds of forks faded](https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1000&h=480&fit=crop&auto=format)
+![DeFi blue chips — Aave, Uniswap and Curve still standing after hundreds of forks faded](/images/blog/2021-02-defi-summer-retrospective-inline-01.jpg)
 *The protocols that survived DeFi Summer shared one trait: genuine utility beyond yield farming.*
 
 > Of the **1000+ DeFi projects** launched in Summer 2020, fewer than 20 still have meaningful usage today. Bears filtered for real utility over speculative yield.

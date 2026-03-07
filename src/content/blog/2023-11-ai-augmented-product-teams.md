@@ -1,7 +1,7 @@
 ---
 title: 'AI-Augmented Product Teams: 9 Months In'
 description: 'We have been running AI-augmented product development seriously for nine months. Here is what actually changed, what did not, and what I wish I had done differently.'
-heroImage: 'https://images.unsplash.com/photo-1682687982501-1e58ab814714?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/ai-product-teams-01.jpg'
 heroAlt: 'AI augmented teams'
 pubDate: 'Nov 28 2023'
 ---
@@ -10,7 +10,7 @@ In March 2023 I wrote about how LLMs were changing my individual engineering pro
 
 This is what actually happened.
 
-![Team collaborating around laptops with data visualizations on screen](https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1000&h=480&fit=crop&auto=format)
+![Team collaborating around laptops with data visualizations on screen](/images/blog/2023-11-ai-augmented-product-teams-inline-01.jpg)
 *Nine months of systematic AI integration across engineering, design, PM, and support*
 
 ## Engineering: Where the Gains Were Real
@@ -37,7 +37,7 @@ The LLM misses things that require domain knowledge or contextual judgment that'
 
 Where AI didn't help in PM: strategic prioritization, stakeholder alignment, and understanding the political dynamics of what gets built and why. These require human judgment, relationships, and organizational context that LLMs don't have.
 
-![Data analyst reviewing patterns and insights on a large display](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1000&h=480&fit=crop&auto=format)
+![Data analyst reviewing patterns and insights on a large display](/images/blog/2023-11-ai-augmented-product-teams-inline-02.jpg)
 *AI catches patterns across large datasets faster than any human — but the PM still provides the judgment the model can't*
 
 ## The Skill Distribution Question
@@ -52,7 +52,7 @@ It creates challenges too. The tasks that remain clearly senior-level are fewer 
 
 We haven't fully worked out the implications for career development. How do you develop judgment if you skip the years of lower-level practice that used to build it? I don't have a good answer yet.
 
-![Mentor and junior developer pair programming at a workstation](https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&h=480&fit=crop&auto=format)
+![Mentor and junior developer pair programming at a workstation](/images/blog/2023-11-ai-augmented-product-teams-inline-03.jpg)
 *The tasks that remain clearly senior-level are fewer — what distinguishes seniority now is judgment, not syntax fluency*
 
 ## What I'd Do Differently

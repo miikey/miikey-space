@@ -1,7 +1,7 @@
 ---
 title: "The Acquiring Landscape: What They Don't Tell You"
 description: "A frank breakdown of payment acquiring — interchange, scheme fees, merchant discount rates, and why the numbers rarely work out the way the sales deck says."
-heroImage: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/acquiring-landscape-01.jpg'
 heroAlt: 'Payment processing infrastructure'
 pubDate: 'Sep 18 2019'
 ---
@@ -14,7 +14,7 @@ Here's the honest breakdown of how payment acquiring actually works.
 
 When a card is charged, the merchant doesn't lose one fee — they lose a stack of them:
 
-![Payment fee stack — interchange, scheme fees, and acquirer margin all come out before the merchant sees a cent](https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1000&h=480&fit=crop&auto=format)
+![Payment fee stack — interchange, scheme fees, and acquirer margin all come out before the merchant sees a cent](/images/blog/2019-09-acquiring-landscape-what-they-dont-tell-you-inline-01.jpg)
 *Every card transaction carries multiple layers of fees — most merchants only see the final MDR.*
 
 **Interchange**: Paid to the card-issuing bank. This is the largest fee and it's non-negotiable. It varies by card type (credit vs debit), card tier (standard vs premium), transaction type (card-present vs card-not-present), and region. A premium Visa Infinite card used for an e-commerce transaction in Southeast Asia has a dramatically different interchange rate than a debit card tapped at a point of sale in Europe.
@@ -55,7 +55,7 @@ Every declined transaction is lost revenue. The reasons for declines fall into a
 
 **Acquirer declines**: Your acquirer's fraud rules triggered. This is where working closely with your acquirer to tune rules for your merchant's transaction profile makes a real difference.
 
-![Decline waterfall — understanding which declines are recoverable vs permanent changes your authorization strategy](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1000&h=480&fit=crop&auto=format)
+![Decline waterfall — understanding which declines are recoverable vs permanent changes your authorization strategy](/images/blog/2019-09-acquiring-landscape-what-they-dont-tell-you-inline-02.jpg)
 *Soft declines are recoverable with smart retry logic. Hard declines are permanent. Knowing the difference saves revenue.*
 
 ## What to Actually Optimize For

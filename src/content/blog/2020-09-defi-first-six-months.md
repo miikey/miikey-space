@@ -1,7 +1,7 @@
 ---
 title: 'DeFi: My First Six Months Down the Rabbit Hole'
 description: 'I spent six months going deep on Aave, Compound, Uniswap, and Yearn. Here is what I actually learned about the infrastructure, the risks, and why I think this matters for payments.'
-heroImage: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/defi-six-months-01.jpg'
 heroAlt: 'DeFi blockchain network'
 pubDate: 'Sep 07 2020'
 ---
@@ -10,7 +10,7 @@ In early 2020, a colleague sent me the Compound whitepaper. By September I'd dep
 
 Here's what six months of hands-on DeFi actually taught me.
 
-![DeFi liquidity pools and protocol dashboards on multiple screens](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1000&h=480&fit=crop&auto=format)
+![DeFi liquidity pools and protocol dashboards on multiple screens](/images/blog/2020-09-defi-first-six-months-inline-01.jpg)
 *The DeFi dashboard view — tracking positions across Aave, Compound, and Yearn simultaneously*
 
 ## The Infrastructure Is Real
@@ -31,7 +31,7 @@ The risk model for DeFi is fundamentally different from traditional finance. In 
 
 I also underestimated the oracle problem. Price oracles — the mechanisms that bring off-chain price data on-chain — are a critical attack surface that I hadn't fully appreciated until I saw several oracle manipulation attacks up close.
 
-![Close-up of code on a dark screen showing smart contract logic](https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1000&h=480&fit=crop&auto=format)
+![Close-up of code on a dark screen showing smart contract logic](/images/blog/2020-09-defi-first-six-months-inline-02.jpg)
 *"Audited" doesn't mean "safe" — code risk is more legible than counterparty risk, but harder for most people to evaluate*
 
 ## The Payments Intersection
@@ -44,7 +44,7 @@ The on/off ramp problem is still the bottleneck. Getting money from a bank accou
 
 I built a proof-of-concept for this during those six months. Two counterparties in different countries, settling a cross-border transaction in USDC via a smart contract with agreed-upon conditions. The settlement itself — from "conditions met" to "funds available" — took 15 seconds. No correspondent banks. No FX spread. No T+2.
 
-![Global wire transfer and digital payment flows visualized](https://images.unsplash.com/photo-1563986768609-322da13575f2?w=1000&h=480&fit=crop&auto=format)
+![Global wire transfer and digital payment flows visualized](/images/blog/defi-fix.jpg)
 *Two counterparties, two countries, USDC settlement in 15 seconds — no correspondent banks, no FX spread, no T+2*
 
 ## What Comes Next

@@ -1,7 +1,7 @@
 ---
 title: 'MPC Wallets: The Infrastructure Upgrade Crypto Needed'
 description: 'Multi-Party Computation for key management is not a new idea, but it is finally practical at scale. Here is why MPC wallets matter and what the architecture looks like.'
-heroImage: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/mpc-wallets-01.jpg'
 heroAlt: 'Crypto wallet security'
 pubDate: 'May 07 2024'
 ---
@@ -10,7 +10,7 @@ For most of crypto's history, wallet security has been a binary problem: either 
 
 MPC (Multi-Party Computation) wallets represent a genuine third path. After spending the last year building MPC-based key management infrastructure, I want to explain why this matters and how it works.
 
-![Digital padlock on a glowing circuit board representing cryptographic security](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1000&h=480&fit=crop&auto=format)
+![Digital padlock on a glowing circuit board representing cryptographic security](/images/blog/2024-05-mpc-wallets-crypto-needed-inline-01.jpg)
 *The binary choice between "hold your own keys" and "trust a custodian" defined crypto's first decade. MPC breaks that binary.*
 
 ## The Problem with Traditional Key Management
@@ -44,7 +44,7 @@ What's powerful about this:
 
 **Auditable.** Every signing ceremony is logged: who participated, what was approved, when. Full audit trail without relying on internal accounting systems.
 
-![Server room with rows of blinking equipment](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1000&h=480&fit=crop&auto=format)
+![Server room with rows of blinking equipment](/images/blog/2024-05-mpc-wallets-crypto-needed-inline-02.jpg)
 *MPC key shares are distributed across independent infrastructure — different servers, different environments, different trust boundaries.*
 
 ## The Architecture We Built
@@ -68,7 +68,7 @@ MPC wallet infrastructure is significantly better than alternatives, but it's no
 
 **Cross-chain support.** Different chains use different signature schemes (ECDSA, EdDSA, Schnorr). MPC implementations need to support each scheme separately. Cross-chain wallet management requires careful architecture.
 
-![Engineer reviewing security audit logs on a screen](https://images.unsplash.com/photo-1563986768609-322da13575f2?w=1000&h=480&fit=crop&auto=format)
+![Engineer reviewing security audit logs on a screen](/images/blog/defi-fix.jpg)
 *Every signing ceremony produces a full audit trail — who participated, what policy was enforced, when. Compliance built into the cryptography.*
 
 Despite these challenges: for any organization managing material value in crypto assets, MPC-based key management is now the standard I'd recommend. The FTX era is over. The infrastructure for trustworthy custody exists. Use it.

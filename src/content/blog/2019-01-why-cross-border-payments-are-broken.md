@@ -1,7 +1,7 @@
 ---
 title: 'Why Cross-Border Payments Are Still Broken in 2019'
 description: 'Swift was built in 1973. We landed on the moon in 1969. Yet moving $100 across borders still takes 3-5 days and costs 6%. Something is fundamentally wrong.'
-heroImage: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/cross-border-payments-01.jpg'
 heroAlt: 'Global payment network'
 pubDate: 'Jan 14 2019'
 ---
@@ -14,7 +14,7 @@ I've spent the last two years in the weeds of payment infrastructure — buildin
 
 When you wire money internationally, your bank doesn't have a direct relationship with the recipient's bank. Instead, your money hops through a chain of correspondent banks — sometimes 3, sometimes 5 — each taking a cut and adding latency. It's like routing an email through five different servers, except each server charges you a fee.
 
-![Correspondent banking chain — money hops through multiple intermediaries before reaching the recipient](https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1000&h=500&fit=crop&auto=format)
+![Correspondent banking chain — money hops through multiple intermediaries before reaching the recipient](/images/blog/2019-01-why-cross-border-payments-are-broken-inline-01.jpg)
 *The correspondent banking chain. Every hop = fees + latency.*
 
 SWIFT's GPI initiative has improved tracking visibility, but the fundamental architecture remains the same. You can now watch your money sit in each bank's nostro account. Great. But it's still sitting.
@@ -30,7 +30,7 @@ We've been building payment rails for Southeast Asia and the problems are even m
 - T+3 to T+5 settlement cycles
 - Compliance requirements that change with little notice
 
-![Southeast Asia payment landscape — fragmented local rails across multiple markets](https://images.unsplash.com/photo-1580048915913-4f8f5cb481c4?w=1000&h=480&fit=crop&auto=format)
+![Southeast Asia payment landscape — fragmented local rails across multiple markets](/images/blog/2019-01-why-cross-border-payments-are-broken-inline-02.jpg)
 *Local payment methods dominate Southeast Asia — GrabPay, GCash, OVO, PromptPay — but no unified rail.*
 
 The businesses that suffer most are the ones moving money for people who most need it — migrant workers sending remittances home, small exporters getting paid by international buyers, freelancers working for global clients.

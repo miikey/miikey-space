@@ -1,7 +1,7 @@
 ---
 title: 'Where AI and Fintech Actually Intersect'
 description: 'Not the pitch deck version. The practical reality of deploying AI across payment operations, risk management, and product development in a regulated financial services context.'
-heroImage: 'https://images.unsplash.com/photo-1559526324-593bc073d938?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/ai-fintech-01.jpg'
 heroAlt: 'AI fintech intersection'
 pubDate: 'Oct 14 2025'
 ---
@@ -12,7 +12,7 @@ After two years of deploying AI across our payment infrastructure, here's the ho
 
 ## Where AI Is Genuinely Working
 
-![AI fraud detection in fintech — real-time risk scoring running at payment scale](https://images.unsplash.com/photo-1559526324-593bc073d938?w=1000&h=480&fit=crop&auto=format)
+![AI fraud detection in fintech — real-time risk scoring running at payment scale](/images/blog/2025-10-ai-meets-fintech-reality-inline-01.jpg)
 *The AI use cases that survive compliance review are narrow, explainable, and measurable. Everything else stays in the demo.*
 
 > The fintech AI deployments that make it to **production** share one trait: the decision is auditable, the outcome is measurable, and the downside is bounded. Everything else is a pilot that never ships.

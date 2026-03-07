@@ -1,7 +1,7 @@
 ---
 title: 'The LLM Stack: What to Actually Build On'
 description: 'Six months into the LLM boom, the stack is becoming clearer. Here is my current view on which layers are commodity, which are differentiating, and where the value actually accrues.'
-heroImage: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/llm-stack-01.jpg'
 heroAlt: 'AI technology stack'
 pubDate: 'Jul 12 2023'
 ---
@@ -11,7 +11,7 @@ Six months after ChatGPT changed the conversation, the LLM application landscape
 Here's my current mental model of where value sits and what to actually build on.
 
 ## The Commodity Layer
-![LLM infrastructure stack — foundation models, orchestration, and application layers](https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1000&h=480&fit=crop&auto=format)
+![LLM infrastructure stack — foundation models, orchestration, and application layers](/images/blog/2023-07-llm-stack-what-to-build-on-inline-01.jpg)
 *The model layer is commoditising fast. The differentiation is moving up the stack.*
 
 > The foundation model layer is becoming a **commodity utility** — like compute or bandwidth. The value accrues to whoever owns the workflow, the data, and the user relationship on top.

@@ -1,7 +1,7 @@
 ---
 title: 'Managing Engineering Teams Through a Bull Market'
 description: 'When token prices are up 10x and your engineers are getting cold-called daily, people management gets complicated. Here is what I learned running an engineering team through the 2021 crypto bull market.'
-heroImage: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/engineering-teams-01.jpg'
 heroAlt: 'Engineering team collaboration'
 pubDate: 'Oct 14 2021'
 ---
@@ -12,7 +12,7 @@ Running an engineering team through a crypto bull market is its own management c
 
 ## The Retention Environment
 
-![Engineering team — navigating talent competition in a bull market with 10x token valuations](https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&h=480&fit=crop&auto=format)
+![Engineering team — navigating talent competition in a bull market with 10x token valuations](/images/blog/2021-10-managing-engineering-teams-bull-market-inline-01.jpg)
 *When your engineers are getting 3 cold DMs a day with 2x salary offers, everything about management changes.*
 
 > In 2021, the average crypto engineer received **multiple competing offers per month**. Retention wasn't about comp alone — it was about mission clarity and who they were working alongside.

@@ -1,7 +1,7 @@
 ---
 title: 'Bitcoin ETF Approval: What Institutional Entry Actually Means'
 description: 'The SEC approved spot Bitcoin ETFs in January 2024. Here is what this actually means for market structure, infrastructure, and the crypto payments thesis.'
-heroImage: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/bitcoin-etf-01.jpg'
 heroAlt: 'Bitcoin institutional investment'
 pubDate: 'Jan 22 2024'
 ---
@@ -16,7 +16,7 @@ Here's what I think this actually means — beyond the price action.
 
 The ETF approval changes how Bitcoin is accessed, not what Bitcoin is. But that distinction matters for market structure in ways that play out over years.
 
-![Bitcoin ETF inflows — institutional capital flowing into crypto through traditional brokerage infrastructure](https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=1000&h=480&fit=crop&auto=format)
+![Bitcoin ETF inflows — institutional capital flowing into crypto through traditional brokerage infrastructure](/images/blog/2024-01-bitcoin-etf-institutional-entry-inline-01.jpg)
 *The first week: $10B in assets. The structural barrier between institutional capital and Bitcoin has been removed.*
 
 Previously, getting institutional Bitcoin exposure meant either: dealing with crypto-native custodians (Coinbase Custody, BitGo) with their own compliance requirements, or using regulated futures products (CME Bitcoin futures) with basis risk and rolling costs.
@@ -43,7 +43,7 @@ The ETF approval is about Bitcoin as a store of value asset, which is a differen
 
 For the infrastructure layer, the ETF approval matters in a few ways:
 
-![Institutional custody infrastructure — regulated financial services firms managing crypto assets at scale](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1000&h=480&fit=crop&auto=format)
+![Institutional custody infrastructure — regulated financial services firms managing crypto assets at scale](/images/blog/2024-01-bitcoin-etf-institutional-entry-inline-02.jpg)
 *Custody at scale is a different problem than retail custody — security, compliance, and reporting requirements multiply.*
 
 **Custody at scale.** Coinbase Custody is the custodian for several of the approved ETFs. Holding tens of billions in Bitcoin for regulated financial institutions at scale is a different security and operational problem than retail custody. This accelerates the development of institutional-grade custody infrastructure.

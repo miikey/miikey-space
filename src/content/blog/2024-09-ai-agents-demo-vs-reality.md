@@ -1,7 +1,7 @@
 ---
 title: 'AI Agents in Production: The Gap Between Demo and Reality'
 description: 'Agent demos are compelling. Production agents are a different problem. Here is what building and running AI agents in a payment context actually looks like.'
-heroImage: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/ai-agents-01.jpg'
 heroAlt: 'AI robot agent'
 pubDate: 'Sep 16 2024'
 ---
@@ -12,7 +12,7 @@ Then you try to build one for a real use case. The gap between demo and producti
 
 Having built and deployed several agents in production contexts over the past year, here's my honest accounting.
 
-![Abstract visualization of an AI system processing tasks in sequence](https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1000&h=480&fit=crop&auto=format)
+![Abstract visualization of an AI system processing tasks in sequence](/images/blog/2024-09-ai-agents-demo-vs-reality-inline-01.jpg)
 *The elegant chain-of-thought reasoning in a demo hides the messy reality of tool failures, edge cases, and latency that define production systems.*
 
 ## What Demos Hide
@@ -37,7 +37,7 @@ The limits: novel fraud patterns it hasn't seen before, cases requiring contextu
 
 The failure modes we encountered: confidently wrong responses about account specifics, hallucinated policy details, responses that technically answered the question asked but missed the underlying concern.
 
-![A fraud analyst reviewing transaction data on multiple monitors](https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1000&h=480&fit=crop&auto=format)
+![A fraud analyst reviewing transaction data on multiple monitors](/images/blog/2024-09-ai-agents-demo-vs-reality-inline-02.jpg)
 *In fraud investigation, the agent handles information gathering in 30–45 seconds. The human analyst still makes the final call — and makes it with better information than before.*
 
 ## The Production Architecture That Works
@@ -60,5 +60,5 @@ The honest value proposition for production agents isn't "fully autonomous." It'
 
 That's a meaningful productivity gain. It's not the Sci-Fi version. Build for the realistic version and you'll ship something that actually works.
 
-![Team reviewing AI agent output dashboards](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1000&h=480&fit=crop&auto=format)
+![Team reviewing AI agent output dashboards](/images/blog/2024-09-ai-agents-demo-vs-reality-inline-03.jpg)
 *The "human in the loop" isn't a limitation — it's the design. Agents augment human judgment; they don't replace it.*

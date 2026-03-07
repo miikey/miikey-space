@@ -1,7 +1,7 @@
 ---
 title: 'COVID Accelerated Digital Payments by a Decade'
 description: 'In twelve weeks, contactless payment adoption did what ten years of industry evangelism could not. Here is what changed, what will stick, and what the payment industry looks like on the other side.'
-heroImage: 'https://images.unsplash.com/photo-1580048915913-4f8f5cb481c4?w=1200&h=630&fit=crop&auto=format'
+heroImage: '/images/blog/covid-payments-01.jpg'
 heroAlt: 'Mobile digital payments'
 pubDate: 'Apr 22 2020'
 ---
@@ -16,7 +16,7 @@ Twelve weeks of pandemic did what ten years of fintech evangelism couldn't.
 
 The mechanism was simple: people stopped wanting to touch things. Card terminals, PIN pads, cash — anything shared with strangers felt suddenly dangerous. The psychological barrier to new payment behavior (which normally takes years to overcome) collapsed in weeks.
 
-![Contactless payment surge — QR codes and tap-to-pay replacing cash overnight across Southeast Asia](https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1000&h=480&fit=crop&auto=format)
+![Contactless payment surge — QR codes and tap-to-pay replacing cash overnight across Southeast Asia](/images/blog/2020-04-covid-accelerated-digital-payments-inline-01.jpg)
 *In Q2 2020, contactless payment volumes jumped 40-60% in most markets. A decade of adoption happened in weeks.*
 
 In Southeast Asia, the shift was even more pronounced because the baseline was lower — cash was still dominant in most markets heading into 2020. The jump to QR code wallets and mobile payments wasn't a marginal shift, it was structural.
@@ -39,7 +39,7 @@ Not all COVID-driven behavior changes will persist. Restaurant QR code menus are
 
 **Infrastructure investment**: Merchants who upgraded their payment infrastructure to handle digital payments during COVID aren't going to throw it away. They'll find new uses for it — loyalty programs, delivery integration, data analytics.
 
-![Digital payment infrastructure — the merchant POS systems and QR acceptance networks built under COVID pressure](https://images.unsplash.com/photo-1580048915913-4f8f5cb481c4?w=1000&h=480&fit=crop&auto=format)
+![Digital payment infrastructure — the merchant POS systems and QR acceptance networks built under COVID pressure](/images/blog/2020-04-covid-accelerated-digital-payments-inline-02.jpg)
 *Merchants who built digital payment infrastructure during COVID will find new uses for it — loyalty, data, delivery.*
 
 My prediction: contactless payment rates in most markets will settle 25-35 percentage points higher than pre-COVID baselines. That's a permanent structural shift.
