@@ -7,7 +7,7 @@ import { SITE_TITLE, SITE_AUTHOR, TWITTER_HANDLE } from '../consts';
 interface Props {
   title: string;
   description: string;
-  image?: ImageMetadata;
+  image?: ImageMetadata | string;
   type?: 'website' | 'article';
   pubDate?: Date;
   updatedDate?: Date;
@@ -26,7 +26,10 @@ const {
   keywords = 'fintech, crypto, DeFi, payments, AI, blockchain, stablecoin, payment infrastructure',
 } = Astro.props;
 
-const ogImageURL = new URL(image.src, Astro.url);
+// Support both string paths ("/images/blog/xxx.jpg") and ImageMetadata objects
+const ogImageURL = typeof image === 'string'
+  ? new URL(image, Astro.site)
+  : new URL(image.src, Astro.url);
 
 // JSON-LD structured data
 const jsonLd = type === 'article'
