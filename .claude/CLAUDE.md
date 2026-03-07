@@ -39,6 +39,10 @@ curl -L "https://images.unsplash.com/photo-{ID}?w=1200&h=630&fit=crop&auto=forma
 - Twitter：`@0xmiikey`
 - GitHub：`miikey`
 - **禁止在 About 以外的任何页面出现 "UQPAY" 字眼**
+- **合规要求：禁止将 UQPAY 与加密货币/DeFi/crypto 直接关联描述**
+  - ✅ 可以：描述 MIIKEY 个人有 DeFi/crypto 背景
+  - ✅ 可以：描述 UQPAY 为"跨境支付基础设施"、"全球支付公司"
+  - ❌ 禁止：描述 UQPAY 为"crypto-native"、"加密支付"、"DeFi 相关"
 
 ## 构建规范
 
