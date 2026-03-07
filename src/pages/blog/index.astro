@@ -4,7 +4,6 @@ import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -13,38 +12,38 @@ const posts = (await getCollection('blog')).sort(
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <BaseHead title={`Writing — ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header />
-    <main style="max-width: 680px; margin: 0 auto; padding: 3rem 1.5rem;">
+<head>
+  <BaseHead title="Writing — 0xmiikey" description="Thoughts on fintech, DeFi, AI, and building technical teams." />
+</head>
+<body>
+  <Header />
+  <main style="max-width: 720px; margin: 0 auto; padding: 4rem 1.5rem 2rem;">
 
-      <h1 style="font-size: 1.25rem; font-weight: 600; letter-spacing: -0.01em; margin-bottom: 0.5rem;">Writing</h1>
-      <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 2.5rem;">
-        Thoughts on crypto, DeFi, product, and building things.
-      </p>
+    <h1 style="font-size: 1.5rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 0.5rem; color: var(--fg);">Writing</h1>
+    <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 3rem; line-height: 1.7;">
+      Thinking out loud on fintech infrastructure, DeFi, AI's impact on product teams, and building in the open.
+    </p>
 
-      <ul style="list-style: none;">
-        {posts.map((post) => (
-          <li style="border-top: 1px solid var(--border);">
-            <a href={`/blog/${post.id}/`}
-              style="display: flex; align-items: baseline; justify-content: space-between; padding: 0.9rem 0; text-decoration: none; gap: 1rem;"
-              onmouseover="this.querySelector('.post-title').style.color='var(--muted)'"
-              onmouseout="this.querySelector('.post-title').style.color='var(--fg)'">
-              <span class="post-title" style="font-size: 0.95rem; color: var(--fg); transition: color 0.15s; flex: 1; min-width: 0;">
-                {post.data.title}
-              </span>
-              <span style="font-size: 0.8rem; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums;">
-                <FormattedDate date={post.data.pubDate} />
-              </span>
-            </a>
-          </li>
-        ))}
-        <li style="border-top: 1px solid var(--border);"></li>
-      </ul>
+    <ul style="list-style: none;">
+      {posts.map((post) => (
+        <li>
+          <a href={`/blog/${post.id}/`}
+            style="display:flex; align-items:baseline; justify-content:space-between; gap:1rem; padding:0.9rem 0; border-top:1px solid var(--border); text-decoration:none; color:var(--fg);"
+            onmouseover="this.querySelector('.pt').style.color='var(--accent)'"
+            onmouseout="this.querySelector('.pt').style.color='var(--fg)'">
+            <span class="pt" style="font-size:0.95rem; flex:1; min-width:0; transition:color 0.15s;">
+              {post.data.title}
+            </span>
+            <span style="font-size:0.78rem; color:var(--muted); white-space:nowrap; font-family:var(--font-mono);">
+              <FormattedDate date={post.data.pubDate} />
+            </span>
+          </a>
+        </li>
+      ))}
+      <li style="border-top: 1px solid var(--border);"></li>
+    </ul>
 
-    </main>
-    <Footer />
-  </body>
+  </main>
+  <Footer />
+</body>
 </html>

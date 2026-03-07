@@ -6,121 +6,147 @@ import Header from '../components/Header.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
-const posts = (await getCollection('blog')).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-).slice(0, 5);
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 4);
 ---
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header />
-    <main style="max-width: 680px; margin: 0 auto; padding: 3rem 1.5rem;">
+<head>
+  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+</head>
+<body>
+  <Header />
+  <main style="max-width: 720px; margin: 0 auto; padding: 4rem 1.5rem 2rem;">
 
-      <!-- Hero -->
-      <section style="margin-bottom: 4rem;">
-        <h1 style="font-size: 1.5rem; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 1rem; line-height: 1.3;">
-          MIIKEY
-        </h1>
-        <p style="font-size: 1.05rem; color: var(--muted); line-height: 1.8; max-width: 520px;">
-          Builder, thinker, crypto enthusiast. Interested in DeFi, product, and the open web.
-          Writing about things I'm building and learning.
-        </p>
-        <div style="display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap;">
-          <a href="https://github.com/miikey" target="_blank" rel="noopener"
-            style="font-size: 0.875rem; color: var(--muted); text-decoration: none; display: flex; align-items: center; gap: 0.35rem;"
-            onmouseover="this.style.color='var(--fg)'" onmouseout="this.style.color='var(--muted)'">
-            GitHub ↗
-          </a>
-          <a href="https://twitter.com/miikey" target="_blank" rel="noopener"
-            style="font-size: 0.875rem; color: var(--muted); text-decoration: none;"
-            onmouseover="this.style.color='var(--fg)'" onmouseout="this.style.color='var(--muted)'">
-            X / Twitter ↗
-          </a>
-        </div>
-      </section>
+    <!-- Hero -->
+    <section style="margin-bottom: 5rem;">
+      <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+        <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent); background: var(--accent-dim); border: 1px solid rgba(0,220,130,0.2); padding: 0.25rem 0.75rem; border-radius: 999px;">
+          Co-founder & CTO · UQPAY
+        </span>
+      </div>
 
-      <!-- Writing -->
-      <section style="margin-bottom: 4rem;">
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
-          <h2 style="font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted);">
-            Writing
-          </h2>
-          <a href="/blog" style="font-size: 0.85rem; color: var(--muted); text-decoration: none;"
-            onmouseover="this.style.color='var(--fg)'" onmouseout="this.style.color='var(--muted)'">
-            All posts →
-          </a>
-        </div>
-        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0;">
-          {posts.map((post) => (
-            <li style="border-top: 1px solid var(--border);">
-              <a href={`/blog/${post.id}/`}
-                style="display: flex; align-items: baseline; justify-content: space-between; padding: 0.85rem 0; text-decoration: none; gap: 1rem;"
-                onmouseover="this.querySelector('.post-title').style.color='var(--muted)'"
-                onmouseout="this.querySelector('.post-title').style.color='var(--fg)'">
-                <span class="post-title" style="font-size: 0.95rem; color: var(--fg); transition: color 0.15s; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                  {post.data.title}
-                </span>
-                <span style="font-size: 0.8rem; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums;">
-                  <FormattedDate date={post.data.pubDate} />
-                </span>
-              </a>
-            </li>
-          ))}
-          <li style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);"></li>
-        </ul>
-      </section>
+      <h1 style="font-size: clamp(2rem, 5vw, 2.75rem); font-weight: 700; letter-spacing: -0.04em; line-height: 1.15; margin-bottom: 1.5rem; color: var(--fg);">
+        Building at the edge of<br/>
+        <span style="color: var(--accent);">fintech, crypto & AI.</span>
+      </h1>
 
-      <!-- Projects -->
-      <section style="margin-bottom: 4rem;">
-        <h2 style="font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 1.25rem;">
-          Projects
+      <p style="font-size: 1.05rem; color: #888; line-height: 1.85; max-width: 560px; margin-bottom: 1rem;">
+        I'm MIIKEY — engineer turned founder. Co-building UQPAY, a next-gen payment infrastructure
+        for the borderless economy. Previously deep in DeFi protocol development.
+      </p>
+      <p style="font-size: 1.05rem; color: #888; line-height: 1.85; max-width: 560px;">
+        Right now I'm obsessed with one question: <em style="color: #aaa;">how does AI fundamentally
+        reshape what it means to build a product team — and what survives the shift?</em>
+      </p>
+
+      <div style="display: flex; gap: 1.25rem; margin-top: 2rem; flex-wrap: wrap;">
+        <a href="https://twitter.com/0xmiikey" target="_blank" rel="noopener"
+          style="font-size: 0.875rem; font-family: var(--font-mono); color: var(--muted); display: flex; align-items: center; gap: 0.4rem; transition: color 0.15s;"
+          onmouseover="this.style.color='var(--fg)'" onmouseout="this.style.color='var(--muted)'">
+          @0xmiikey ↗
+        </a>
+        <a href="https://github.com/miikey" target="_blank" rel="noopener"
+          style="font-size: 0.875rem; font-family: var(--font-mono); color: var(--muted); transition: color 0.15s;"
+          onmouseover="this.style.color='var(--fg)'" onmouseout="this.style.color='var(--muted)'">
+          github/miikey ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- Writing -->
+    <section style="margin-bottom: 4.5rem;">
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+        <h2 style="font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted-2);">
+          Writing
         </h2>
-        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0;">
-          {[
-            {
-              name: 'miikey-space',
-              desc: 'Personal site and writing. Built with Astro.',
-              href: 'https://github.com/miikey/miikey-space',
-            },
-            {
-              name: 'defistation-web',
-              desc: 'DeFi analytics and tracking dashboard.',
-              href: 'https://github.com/miikey/defistation-web',
-            },
-            {
-              name: 'aave-ui',
-              desc: 'Interface work for Aave protocol.',
-              href: 'https://github.com/miikey/aave-ui',
-            },
-          ].map((project) => (
-            <li style="border-top: 1px solid var(--border);">
-              <a href={project.href} target="_blank" rel="noopener"
-                style="display: flex; align-items: baseline; justify-content: space-between; padding: 0.85rem 0; text-decoration: none; gap: 1rem; flex-wrap: wrap;">
-                <span style="font-size: 0.95rem; color: var(--fg); font-weight: 500;">{project.name}</span>
-                <span style="font-size: 0.85rem; color: var(--muted); flex: 1; text-align: right;">{project.desc}</span>
-              </a>
-            </li>
-          ))}
-          <li style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);"></li>
-        </ul>
-      </section>
+        <a href="/blog" class="nav-link" style="font-size: 0.8rem;">All posts →</a>
+      </div>
+      <ul style="list-style: none;">
+        {posts.map((post) => (
+          <li>
+            <a href={`/blog/${post.id}/`} class="row-item" style="display:flex; align-items:baseline; justify-content:space-between; gap:1rem; padding:0.85rem 0; border-top:1px solid var(--border); text-decoration:none; color:var(--fg);">
+              <span class="row-title" style="font-size: 0.95rem;">{post.data.title}</span>
+              <span style="font-size: 0.78rem; color: var(--muted); white-space: nowrap; font-family: var(--font-mono);">
+                <FormattedDate date={post.data.pubDate} />
+              </span>
+            </a>
+          </li>
+        ))}
+        <li style="border-top: 1px solid var(--border);"></li>
+      </ul>
+    </section>
 
-      <!-- Now -->
-      <section>
-        <h2 style="font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 1rem;">
-          Now
-        </h2>
-        <p style="font-size: 0.95rem; color: var(--muted); line-height: 1.8;">
-          Currently exploring DeFi infrastructure, reading about tokenization, and building in public.
-          Based in Asia. Open to interesting conversations.
+    <!-- Projects -->
+    <section style="margin-bottom: 4.5rem;">
+      <h2 style="font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted-2); margin-bottom: 1.25rem;">
+        Projects
+      </h2>
+      <ul style="list-style: none;">
+        {[
+          {
+            name: 'UQPAY',
+            desc: 'Next-gen payment infrastructure for the borderless economy.',
+            href: 'https://uqpay.com',
+            tag: 'Fintech',
+          },
+          {
+            name: 'defistation-web',
+            desc: 'DeFi analytics and protocol tracking on BSC.',
+            href: 'https://github.com/miikey/defistation-web',
+            tag: 'DeFi',
+          },
+          {
+            name: 'aave-ui',
+            desc: 'Frontend contributions to Aave lending protocol.',
+            href: 'https://github.com/miikey/aave-ui',
+            tag: 'DeFi',
+          },
+          {
+            name: 'miikey-space',
+            desc: 'This site. Astro + Vercel + zero compromise on speed.',
+            href: 'https://github.com/miikey/miikey-space',
+            tag: 'Open Source',
+          },
+        ].map((p) => (
+          <li>
+            <a href={p.href} target="_blank" rel="noopener"
+              style="display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:0.9rem 0; border-top:1px solid var(--border); text-decoration:none; flex-wrap:wrap;"
+              onmouseover="this.querySelector('.p-name').style.color='var(--accent)'"
+              onmouseout="this.querySelector('.p-name').style.color='var(--fg)'">
+              <div style="display:flex; flex-direction:column; gap:0.2rem; flex:1; min-width:0;">
+                <span class="p-name" style="font-size:0.95rem; font-weight:500; color:var(--fg); transition:color 0.15s;">{p.name}</span>
+                <span style="font-size:0.82rem; color:var(--muted);">{p.desc}</span>
+              </div>
+              <span class="tag">{p.tag}</span>
+            </a>
+          </li>
+        ))}
+        <li style="border-top: 1px solid var(--border);"></li>
+      </ul>
+    </section>
+
+    <!-- Now -->
+    <section>
+      <h2 style="font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted-2); margin-bottom: 1.25rem;">
+        Now
+      </h2>
+      <div style="border-left: 2px solid var(--accent); padding-left: 1.25rem;">
+        <p style="font-size: 0.95rem; color: #888; line-height: 1.85; margin-bottom: 0.75rem;">
+          Leading engineering at UQPAY — scaling payment infrastructure across markets,
+          navigating compliance complexity, and keeping the team sharp as AI rewrites the playbook for
+          how software gets built.
         </p>
-      </section>
+        <p style="font-size: 0.95rem; color: #888; line-height: 1.85;">
+          Deeply thinking about: the shrinking gap between product and engineering, what "senior engineer"
+          means in an AI-augmented world, and whether crypto-native payments finally have their moment.
+        </p>
+      </div>
+    </section>
 
-    </main>
-    <Footer />
-  </body>
+  </main>
+  <Footer />
+</body>
 </html>

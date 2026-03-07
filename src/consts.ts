@@ -1,5 +1,5 @@
-// Place any global data in this file.
-// You can import this data from anywhere in your site by using the `import` keyword.
-
-export const SITE_TITLE = 'MIIKEY';
-export const SITE_DESCRIPTION = 'Thoughts on tech, crypto, and building things.';
+export const SITE_TITLE = '0xmiikey';
+export const SITE_DESCRIPTION = 'Co-founder & CTO at UQPAY. Building at the intersection of fintech, crypto, and AI.';
+export const SITE_AUTHOR = 'MIIKEY';
+export const TWITTER_HANDLE = '0xmiikey';
+export const GITHUB_HANDLE = 'miikey';

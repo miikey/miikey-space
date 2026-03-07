@@ -1,16 +1,25 @@
 ---
-import { SITE_TITLE } from '../consts';
+const nav = [
+  { href: '/blog', label: 'Writing' },
+  { href: '/projects', label: 'Projects' },
+  { href: '/about', label: 'About' },
+];
+const path = Astro.url.pathname;
 ---
 
-<header style="border-bottom: 1px solid var(--border); background: var(--bg);">
-  <nav style="max-width: 680px; margin: 0 auto; padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; height: 56px;">
-    <a href="/" style="font-weight: 600; font-size: 1rem; text-decoration: none; letter-spacing: -0.01em;">
-      {SITE_TITLE}
+<header style="border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 50; backdrop-filter: blur(12px); background: rgba(10,10,10,0.85);">
+  <nav style="max-width: 720px; margin: 0 auto; padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; height: 52px;">
+    <a href="/" style="font-family: var(--font-mono); font-size: 0.9rem; font-weight: 500; color: var(--accent); letter-spacing: -0.01em; text-decoration: none;">
+      0xmiikey
     </a>
-    <div style="display: flex; gap: 1.5rem; align-items: center;">
-      <a href="/blog" style="font-size: 0.9rem; color: var(--muted); text-decoration: none; transition: color 0.15s;" onmouseover="this.style.color='var(--fg)'" onmouseout="this.style.color='var(--muted)'">Writing</a>
-      <a href="/projects" style="font-size: 0.9rem; color: var(--muted); text-decoration: none; transition: color 0.15s;" onmouseover="this.style.color='var(--fg)'" onmouseout="this.style.color='var(--muted)'">Projects</a>
-      <a href="/about" style="font-size: 0.9rem; color: var(--muted); text-decoration: none; transition: color 0.15s;" onmouseover="this.style.color='var(--fg)'" onmouseout="this.style.color='var(--muted)'">About</a>
+    <div style="display: flex; gap: 1.75rem; align-items: center;">
+      {nav.map(({ href, label }) => (
+        <a
+          href={href}
+          class="nav-link"
+          style={path.startsWith(href) ? 'color: var(--fg);' : ''}
+        >{label}</a>
+      ))}
     </div>
   </nav>
 </header>

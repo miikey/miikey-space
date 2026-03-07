@@ -6,55 +6,52 @@ import Header from '../components/Header.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
-
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <BaseHead title={title} description={description} />
-  </head>
-  <body>
-    <Header />
-    <main style="max-width: 680px; margin: 0 auto; padding: 3rem 1.5rem;">
+<head>
+  <BaseHead title={`${title} — 0xmiikey`} description={description} />
+</head>
+<body>
+  <Header />
+  <main style="max-width: 720px; margin: 0 auto; padding: 4rem 1.5rem 2rem;">
+    <article>
 
-      <article>
-        <!-- Post header -->
-        <header style="margin-bottom: 2.5rem;">
-          <div style="font-size: 0.85rem; color: var(--muted); margin-bottom: 0.75rem;">
-            <FormattedDate date={pubDate} />
-            {updatedDate && (
-              <span> · Updated <FormattedDate date={updatedDate} /></span>
-            )}
-          </div>
-          <h1 style="font-size: 1.75rem; font-weight: 600; letter-spacing: -0.02em; line-height: 1.3; margin-bottom: 0.75rem;">
-            {title}
-          </h1>
-          {description && (
-            <p style="font-size: 1rem; color: var(--muted); line-height: 1.6;">{description}</p>
-          )}
-        </header>
-
-        {heroImage && (
-          <img src={heroImage} alt="" style="width: 100%; border-radius: 8px; margin-bottom: 2rem;" />
-        )}
-
-        <!-- Post content -->
-        <div class="prose">
-          <slot />
-        </div>
-      </article>
-
-      <!-- Back link -->
-      <div style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border);">
-        <a href="/blog" style="font-size: 0.875rem; color: var(--muted); text-decoration: none;"
-          onmouseover="this.style.color='var(--fg)'" onmouseout="this.style.color='var(--muted)'">
-          ← All posts
-        </a>
+      <!-- Breadcrumb -->
+      <div style="margin-bottom: 2.5rem;">
+        <a href="/blog" class="nav-link" style="font-family: var(--font-mono); font-size: 0.78rem;">← Writing</a>
       </div>
 
-    </main>
-    <Footer />
-  </body>
+      <!-- Header -->
+      <header style="margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent); margin-bottom: 1rem;">
+          <FormattedDate date={pubDate} />
+          {updatedDate && <span style="color: var(--muted);"> · Updated <FormattedDate date={updatedDate} /></span>}
+        </div>
+        <h1 style="font-size: clamp(1.5rem, 4vw, 2.25rem); font-weight: 700; letter-spacing: -0.03em; line-height: 1.2; color: var(--fg); margin-bottom: 1rem;">
+          {title}
+        </h1>
+        {description && (
+          <p style="font-size: 1.05rem; color: var(--muted); line-height: 1.7;">{description}</p>
+        )}
+      </header>
+
+      <!-- Content -->
+      <div class="prose">
+        <slot />
+      </div>
+
+    </article>
+
+    <!-- Footer nav -->
+    <div style="margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;">
+      <a href="/blog" class="nav-link" style="font-family: var(--font-mono); font-size: 0.8rem;">← All posts</a>
+      <a href="https://twitter.com/0xmiikey" target="_blank" rel="noopener" class="nav-link" style="font-family: var(--font-mono); font-size: 0.8rem;">@0xmiikey ↗</a>
+    </div>
+
+  </main>
+  <Footer />
+</body>
 </html>
