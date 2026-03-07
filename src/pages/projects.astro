@@ -20,30 +20,12 @@ import Header from '../components/Header.astro';
       <p style="font-family: var(--font-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted-2); margin-bottom: 1rem;">Active</p>
       <ul style="list-style: none; margin-bottom: 2.5rem;">
         {[
-          {
-            name: 'UQPAY',
-            desc: 'Global payment infrastructure — acquiring, card issuing, cross-border settlement, and FX for the borderless economy.',
-            href: 'https://uqpay.com',
-            tag: 'Fintech',
-            status: 'Live',
-          },
-          {
-            name: 'ClearChain',
-            desc: 'Blockchain settlement layer for payment networks. Collapses FX settlement from T+2 to near real-time using a multi-chain liquidity mesh.',
-            href: '#',
-            tag: 'Protocol',
-            status: 'Building',
-          },
-          {
-            name: 'RiskGuard',
-            desc: 'AI-powered fraud detection and real-time risk scoring for card acquiring pipelines. Combines ML anomaly detection with rule-based decisioning.',
-            href: '#',
-            tag: 'AI · Risk',
-            status: 'Building',
-          },
+          { name: 'UQPAY', desc: 'Global payment infrastructure — acquiring, card issuing, cross-border settlement, and FX for the borderless economy.', href: '/projects/uqpay', tag: 'Fintech', status: 'Live' },
+          { name: 'ClearChain', desc: 'Blockchain settlement layer for payment networks. Collapses FX settlement from T+2 to near real-time using a multi-chain liquidity mesh.', href: '/projects/clearchain', tag: 'Protocol', status: 'Building' },
+          { name: 'RiskGuard', desc: 'AI-powered fraud detection and real-time risk scoring for card acquiring pipelines. Combines ML anomaly detection with rule-based decisioning.', href: '/projects/riskguard', tag: 'AI · Risk', status: 'Building' },
         ].map((project) => (
           <li style="border-top: 1px solid var(--border);">
-            <a href={project.href} target="_blank" rel="noopener"
+            <a href={project.href}
               style="display: flex; align-items: flex-start; justify-content: space-between; padding: 1rem 0; text-decoration: none; gap: 1rem; flex-wrap: wrap;">
               <div style="flex: 1; min-width: 0;">
                 <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.3rem;">
@@ -63,30 +45,10 @@ import Header from '../components/Header.astro';
       <p style="font-family: var(--font-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted-2); margin-bottom: 1rem;">Infrastructure & Tooling</p>
       <ul style="list-style: none; margin-bottom: 2.5rem;">
         {[
-          {
-            name: 'Threshold Signer',
-            desc: 'MPC wallet infrastructure implementing threshold signature schemes (TSS) for institutional-grade key management. No single point of key compromise.',
-            href: '#',
-            tag: 'MPC',
-          },
-          {
-            name: 'CardOS',
-            desc: 'Programmable card issuance platform. Handles BIN sponsorship, card lifecycle management, and real-time authorization controls via webhook.',
-            href: '#',
-            tag: 'Issuing',
-          },
-          {
-            name: 'PayRoute',
-            desc: 'Intelligent payment routing engine — dynamically selects acquirer, currency path, and fallback rails to optimize approval rate and cost.',
-            href: '#',
-            tag: 'Routing',
-          },
-          {
-            name: 'LiquidBridge',
-            desc: 'Cross-chain liquidity bridge for stablecoin settlements across EVM and non-EVM chains. Powers real-time FX for UQPAY remittance corridors.',
-            href: '#',
-            tag: 'DeFi',
-          },
+          { name: 'Threshold Signer', desc: 'MPC wallet infrastructure implementing threshold signature schemes (TSS) for institutional-grade key management.', href: '/projects/threshold-signer', tag: 'MPC' },
+          { name: 'CardOS', desc: 'Programmable card issuance platform. BIN sponsorship, card lifecycle management, and real-time authorization controls via webhook.', href: '/projects/cardos', tag: 'Issuing' },
+          { name: 'PayRoute', desc: 'Intelligent payment routing engine — dynamically selects acquirer, currency path, and fallback rails to optimize approval rate and cost.', href: '/projects/payroute', tag: 'Routing' },
+          { name: 'LiquidBridge', desc: 'Cross-chain liquidity bridge for stablecoin settlements across EVM and non-EVM chains.', href: '/projects/liquidbridge', tag: 'DeFi' },
         ].map((project) => (
           <li style="border-top: 1px solid var(--border);">
             <a href={project.href}
@@ -102,28 +64,13 @@ import Header from '../components/Header.astro';
         <li style="border-top: 1px solid var(--border);"></li>
       </ul>
 
-      <!-- Open Source Contributions -->
+      <!-- Open Source -->
       <p style="font-family: var(--font-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted-2); margin-bottom: 1rem;">Open Source</p>
       <ul style="list-style: none;">
         {[
-          {
-            name: 'defistation-web',
-            desc: 'DeFi analytics and tracking dashboard for the BSC ecosystem.',
-            href: 'https://github.com/miikey/defistation-web',
-            tag: 'DeFi',
-          },
-          {
-            name: 'aave-ui',
-            desc: 'UI contributions to the Aave lending protocol.',
-            href: 'https://github.com/miikey/aave-ui',
-            tag: 'DeFi',
-          },
-          {
-            name: 'miikey-space',
-            desc: 'This site. Astro + Vercel. Source is open.',
-            href: 'https://github.com/miikey/miikey-space',
-            tag: 'Personal',
-          },
+          { name: 'defistation-web', desc: 'DeFi analytics and tracking dashboard for the BSC ecosystem.', href: 'https://github.com/miikey/defistation-web', tag: 'DeFi' },
+          { name: 'aave-ui', desc: 'UI contributions to the Aave lending protocol.', href: 'https://github.com/miikey/aave-ui', tag: 'DeFi' },
+          { name: 'miikey-space', desc: 'This site. Astro + Vercel. Source is open.', href: 'https://github.com/miikey/miikey-space', tag: 'Personal' },
         ].map((project) => (
           <li style="border-top: 1px solid var(--border);">
             <a href={project.href} target="_blank" rel="noopener"

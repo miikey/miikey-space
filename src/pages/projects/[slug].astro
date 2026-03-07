@@ -1,0 +1,68 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map((project) => ({
+    params: { slug: project.id },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+const { title, description, tag, status, year, links } = project.data;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={`${title} — 0xMiikey`} description={description} />
+  </head>
+  <body>
+    <Header />
+    <main style="max-width: 680px; margin: 0 auto; padding: 3rem 1.5rem 5rem;">
+
+      <!-- Back -->
+      <a href="/projects" style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--muted); text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem; margin-bottom: 2.5rem; transition: color 0.15s;"
+        onmouseover="this.style.color='var(--fg)'" onmouseout="this.style.color='var(--muted)'">
+        ← Projects
+      </a>
+
+      <!-- Header -->
+      <div style="margin-bottom: 2.5rem;">
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; flex-wrap: wrap;">
+          <span class="tag">{tag}</span>
+          <span style={`font-size: 0.65rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.05em; padding: 0.2rem 0.6rem; border-radius: 999px; ${status === 'Live' ? 'color: var(--accent); background: var(--accent-dim); border: 1px solid rgba(0,220,130,0.2);' : 'color: var(--muted); background: var(--bg-2); border: 1px solid var(--border);'}`}>{status}</span>
+          <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted-2);">{year}</span>
+        </div>
+        <h1 style="font-size: 1.75rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 0.75rem; color: var(--fg);">{title}</h1>
+        <p style="font-size: 1rem; color: var(--muted); line-height: 1.7;">{description}</p>
+
+        {links && links.length > 0 && (
+          <div style="display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap;">
+            {links.map((link) => (
+              <a href={link.href} target="_blank" rel="noopener"
+                style="font-size: 0.85rem; font-family: var(--font-mono); color: var(--accent); border: 1px solid rgba(0,220,130,0.3); padding: 0.4rem 0.9rem; border-radius: 6px; text-decoration: none; transition: all 0.15s;"
+                onmouseover="this.style.background='var(--accent-dim)'" onmouseout="this.style.background='transparent'">
+                {link.label} ↗
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+
+      <hr style="border: none; border-top: 1px solid var(--border); margin-bottom: 2.5rem;" />
+
+      <!-- Content -->
+      <div class="prose">
+        <Content />
+      </div>
+
+    </main>
+    <Footer />
+  </body>
+</html>
