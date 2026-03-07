@@ -29,6 +29,7 @@
 
   --font-sans: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'Geist Mono', 'JetBrains Mono', monospace;
+  --prose-fg: #c8c8c8;
 }
 
 [data-theme="light"] {
@@ -41,6 +42,7 @@
   --border: #e0e0e0;
   --accent: #008a50;
   --accent-dim: rgba(0, 138, 80, 0.10);
+  --prose-fg: #1a1a1a;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -71,7 +73,7 @@ a:hover { color: var(--accent); }
 .prose {
   font-size: 1rem;
   line-height: 1.85;
-  color: #c8c8c8;
+  color: var(--prose-fg);
 }
 
 .prose h1, .prose h2, .prose h3, .prose h4 {
