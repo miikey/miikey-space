@@ -7,20 +7,108 @@ import Header from '../components/Header.astro';
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title="Projects — MIIKEY" description="Things I've built." />
+    <BaseHead title="Projects — 0xMiikey" description="Things I've built across fintech, crypto, and AI." />
   </head>
   <body>
     <Header />
     <main style="max-width: 680px; margin: 0 auto; padding: 3rem 1.5rem;">
 
-      <h1 style="font-size: 1.25rem; font-weight: 600; letter-spacing: -0.01em; margin-bottom: 0.5rem;">Projects</h1>
-      <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 2.5rem;">Things I've built, contributed to, or experimented with.</p>
+      <h1 style="font-size: 1.25rem; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 0.5rem;">Projects</h1>
+      <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 2.5rem;">Things I've built, shipped, or gone deep on — across payments, crypto infrastructure, and AI.</p>
 
+      <!-- Active -->
+      <p style="font-family: var(--font-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted-2); margin-bottom: 1rem;">Active</p>
+      <ul style="list-style: none; margin-bottom: 2.5rem;">
+        {[
+          {
+            name: 'UQPAY',
+            desc: 'Global payment infrastructure — acquiring, card issuing, cross-border settlement, and FX for the borderless economy.',
+            href: 'https://uqpay.com',
+            tag: 'Fintech',
+            status: 'Live',
+          },
+          {
+            name: 'ClearChain',
+            desc: 'Blockchain settlement layer for payment networks. Collapses FX settlement from T+2 to near real-time using a multi-chain liquidity mesh.',
+            href: '#',
+            tag: 'Protocol',
+            status: 'Building',
+          },
+          {
+            name: 'RiskGuard',
+            desc: 'AI-powered fraud detection and real-time risk scoring for card acquiring pipelines. Combines ML anomaly detection with rule-based decisioning.',
+            href: '#',
+            tag: 'AI · Risk',
+            status: 'Building',
+          },
+        ].map((project) => (
+          <li style="border-top: 1px solid var(--border);">
+            <a href={project.href} target="_blank" rel="noopener"
+              style="display: flex; align-items: flex-start; justify-content: space-between; padding: 1rem 0; text-decoration: none; gap: 1rem; flex-wrap: wrap;">
+              <div style="flex: 1; min-width: 0;">
+                <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.3rem;">
+                  <span style="font-size: 0.95rem; color: var(--fg); font-weight: 500;">{project.name}</span>
+                  <span style={`font-size: 0.6rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.05em; padding: 0.15rem 0.5rem; border-radius: 999px; ${project.status === 'Live' ? 'color: var(--accent); background: var(--accent-dim); border: 1px solid rgba(0,220,130,0.2);' : 'color: var(--muted); background: var(--bg-2); border: 1px solid var(--border);'}`}>{project.status}</span>
+                </div>
+                <div style="font-size: 0.875rem; color: var(--muted); line-height: 1.6;">{project.desc}</div>
+              </div>
+              <span class="tag">{project.tag}</span>
+            </a>
+          </li>
+        ))}
+        <li style="border-top: 1px solid var(--border);"></li>
+      </ul>
+
+      <!-- Infrastructure & Tooling -->
+      <p style="font-family: var(--font-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted-2); margin-bottom: 1rem;">Infrastructure & Tooling</p>
+      <ul style="list-style: none; margin-bottom: 2.5rem;">
+        {[
+          {
+            name: 'Threshold Signer',
+            desc: 'MPC wallet infrastructure implementing threshold signature schemes (TSS) for institutional-grade key management. No single point of key compromise.',
+            href: '#',
+            tag: 'MPC',
+          },
+          {
+            name: 'CardOS',
+            desc: 'Programmable card issuance platform. Handles BIN sponsorship, card lifecycle management, and real-time authorization controls via webhook.',
+            href: '#',
+            tag: 'Issuing',
+          },
+          {
+            name: 'PayRoute',
+            desc: 'Intelligent payment routing engine — dynamically selects acquirer, currency path, and fallback rails to optimize approval rate and cost.',
+            href: '#',
+            tag: 'Routing',
+          },
+          {
+            name: 'LiquidBridge',
+            desc: 'Cross-chain liquidity bridge for stablecoin settlements across EVM and non-EVM chains. Powers real-time FX for UQPAY remittance corridors.',
+            href: '#',
+            tag: 'DeFi',
+          },
+        ].map((project) => (
+          <li style="border-top: 1px solid var(--border);">
+            <a href={project.href}
+              style="display: flex; align-items: flex-start; justify-content: space-between; padding: 1rem 0; text-decoration: none; gap: 1rem; flex-wrap: wrap;">
+              <div style="flex: 1; min-width: 0;">
+                <div style="font-size: 0.95rem; color: var(--fg); font-weight: 500; margin-bottom: 0.3rem;">{project.name}</div>
+                <div style="font-size: 0.875rem; color: var(--muted); line-height: 1.6;">{project.desc}</div>
+              </div>
+              <span class="tag">{project.tag}</span>
+            </a>
+          </li>
+        ))}
+        <li style="border-top: 1px solid var(--border);"></li>
+      </ul>
+
+      <!-- Open Source Contributions -->
+      <p style="font-family: var(--font-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted-2); margin-bottom: 1rem;">Open Source</p>
       <ul style="list-style: none;">
         {[
           {
             name: 'defistation-web',
-            desc: 'DeFi analytics and tracking dashboard for BSC ecosystem.',
+            desc: 'DeFi analytics and tracking dashboard for the BSC ecosystem.',
             href: 'https://github.com/miikey/defistation-web',
             tag: 'DeFi',
           },
@@ -31,26 +119,8 @@ import Header from '../components/Header.astro';
             tag: 'DeFi',
           },
           {
-            name: 'mento-fi',
-            desc: 'Stablecoin exchange interface for Mento protocol.',
-            href: 'https://github.com/miikey/mento-fi',
-            tag: 'DeFi',
-          },
-          {
-            name: 'basiscash-protocol',
-            desc: 'Algorithmic stablecoin protocol implementation.',
-            href: 'https://github.com/miikey/basiscash-protocol',
-            tag: 'Protocol',
-          },
-          {
-            name: 'ido-contracts',
-            desc: 'Smart contracts for IDO launchpad.',
-            href: 'https://github.com/miikey/ido-contracts',
-            tag: 'Solidity',
-          },
-          {
             name: 'miikey-space',
-            desc: 'This website. Built with Astro + deployed on Vercel.',
+            desc: 'This site. Astro + Vercel. Source is open.',
             href: 'https://github.com/miikey/miikey-space',
             tag: 'Personal',
           },
@@ -58,13 +128,11 @@ import Header from '../components/Header.astro';
           <li style="border-top: 1px solid var(--border);">
             <a href={project.href} target="_blank" rel="noopener"
               style="display: flex; align-items: flex-start; justify-content: space-between; padding: 1rem 0; text-decoration: none; gap: 1rem; flex-wrap: wrap;">
-              <div>
-                <div style="font-size: 0.95rem; color: var(--fg); font-weight: 500; margin-bottom: 0.25rem;">{project.name}</div>
+              <div style="flex: 1; min-width: 0;">
+                <div style="font-size: 0.95rem; color: var(--fg); font-weight: 500; margin-bottom: 0.3rem;">{project.name}</div>
                 <div style="font-size: 0.875rem; color: var(--muted);">{project.desc}</div>
               </div>
-              <span style="font-size: 0.75rem; color: var(--muted); background: var(--border); padding: 0.2rem 0.6rem; border-radius: 999px; white-space: nowrap; margin-top: 0.1rem;">
-                {project.tag}
-              </span>
+              <span class="tag">{project.tag}</span>
             </a>
           </li>
         ))}
