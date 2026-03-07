@@ -3,6 +3,7 @@ title: 'Managing Engineering Teams Through a Bull Market'
 description: 'When token prices are up 10x and your engineers are getting cold-called daily, people management gets complicated. Here is what I learned running an engineering team through the 2021 crypto bull market.'
 heroImage: '/images/blog/engineering-teams-01.jpg'
 heroAlt: 'Engineering team collaboration'
+location: 'Singapore'
 pubDate: 'Oct 14 2021'
 ---
 

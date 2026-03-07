@@ -3,6 +3,7 @@ title: 'DeFi Summer Retrospective: What Survived'
 description: 'DeFi Summer 2020 produced a thousand projects and a billion dollars of value locked. Twelve months later, here is an honest look at what actually survived and why.'
 heroImage: '/images/blog/defi-summer-01.jpg'
 heroAlt: 'Crypto DeFi charts'
+location: 'San Francisco'
 pubDate: 'Feb 10 2021'
 ---
 

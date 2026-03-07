@@ -3,6 +3,7 @@ title: 'Why I Started Writing: A Note on 0xMiikey'
 description: 'Seven years of building payment infrastructure, crypto protocols, and AI products. Here is why I finally started writing it down.'
 heroImage: '/images/blog/building-0xmiikey-01.jpg'
 heroAlt: 'Writing and building'
+location: 'Singapore'
 pubDate: 'Feb 03 2026'
 ---
 

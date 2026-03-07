@@ -3,6 +3,7 @@ title: 'AI-Augmented Product Teams: 9 Months In'
 description: 'We have been running AI-augmented product development seriously for nine months. Here is what actually changed, what did not, and what I wish I had done differently.'
 heroImage: '/images/blog/ai-product-teams-01.jpg'
 heroAlt: 'AI augmented teams'
+location: 'Singapore'
 pubDate: 'Nov 28 2023'
 ---
 

@@ -3,6 +3,7 @@ title: 'Why Cross-Border Payments Are Still Broken in 2019'
 description: 'Swift was built in 1973. We landed on the moon in 1969. Yet moving $100 across borders still takes 3-5 days and costs 6%. Something is fundamentally wrong.'
 heroImage: '/images/blog/cross-border-payments-01.jpg'
 heroAlt: 'Global payment network'
+location: 'Singapore'
 pubDate: 'Jan 14 2019'
 ---
 

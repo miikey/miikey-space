@@ -3,6 +3,7 @@ title: 'Building in the Bear: Why This Is the Best Time'
 description: 'Two collapses in one year. A market down 70%. Regulatory pressure everywhere. This is exactly when the infrastructure worth building gets built.'
 heroImage: '/images/blog/building-bear-01.jpg'
 heroAlt: 'Bear market building'
+location: 'Singapore'
 pubDate: 'Dec 05 2022'
 ---
 

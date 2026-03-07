@@ -3,6 +3,7 @@ title: 'Bitcoin ETF Approval: What Institutional Entry Actually Means'
 description: 'The SEC approved spot Bitcoin ETFs in January 2024. Here is what this actually means for market structure, infrastructure, and the crypto payments thesis.'
 heroImage: '/images/blog/bitcoin-etf-01.jpg'
 heroAlt: 'Bitcoin institutional investment'
+location: 'New York'
 pubDate: 'Jan 22 2024'
 ---
 

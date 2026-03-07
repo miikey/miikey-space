@@ -3,6 +3,7 @@ title: 'Building a Card Issuance API: What Nobody Tells You'
 description: 'Card issuance sounds straightforward until you actually try to build it. Here is what six months of BIN sponsorship negotiations, EMV certification, and scheme compliance actually looks like.'
 heroImage: '/images/blog/card-issuance-api-01.jpg'
 heroAlt: 'Credit card payment terminal'
+location: 'Singapore'
 pubDate: 'Apr 03 2019'
 ---
 

@@ -3,6 +3,7 @@ title: 'NFTs Beyond the Hype: The Infrastructure That Will Last'
 description: 'Everyone is looking at the JPEG prices. I am more interested in what on-chain ownership primitives mean for payments, identity, and programmable assets.'
 heroImage: '/images/blog/nft-infrastructure-01.jpg'
 heroAlt: 'Digital art NFT'
+location: 'New York'
 pubDate: 'Jun 29 2021'
 ---
 

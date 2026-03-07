@@ -3,6 +3,7 @@ title: 'Cross-Border Payments in 2025: What Actually Changed'
 description: 'Six years after writing about why cross-border payments are broken, here is an honest assessment of what has improved, what has not, and where the next inflection points are.'
 heroImage: '/images/blog/cross-border-evolved-01.jpg'
 heroAlt: 'Cross-border payments evolution'
+location: 'Singapore'
 pubDate: 'Jun 10 2025'
 ---
 

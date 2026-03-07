@@ -3,6 +3,7 @@ title: 'AI Agents in Production: The Gap Between Demo and Reality'
 description: 'Agent demos are compelling. Production agents are a different problem. Here is what building and running AI agents in a payment context actually looks like.'
 heroImage: '/images/blog/ai-agents-01.jpg'
 heroAlt: 'AI robot agent'
+location: 'Singapore'
 pubDate: 'Sep 16 2024'
 ---
 

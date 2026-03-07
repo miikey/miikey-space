@@ -3,6 +3,7 @@ title: 'Where AI and Fintech Actually Intersect'
 description: 'Not the pitch deck version. The practical reality of deploying AI across payment operations, risk management, and product development in a regulated financial services context.'
 heroImage: '/images/blog/ai-fintech-01.jpg'
 heroAlt: 'AI fintech intersection'
+location: 'Singapore'
 pubDate: 'Oct 14 2025'
 ---
 

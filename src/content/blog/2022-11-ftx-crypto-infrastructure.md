@@ -3,6 +3,7 @@ title: 'FTX and What It Means for Crypto Infrastructure'
 description: 'The FTX collapse is the largest exchange failure in crypto history. But the lesson is not that crypto is broken. It is that custody and infrastructure design matter more than most people realized.'
 heroImage: '/images/blog/ftx-infrastructure-01.jpg'
 heroAlt: 'Crypto infrastructure'
+location: 'New York'
 pubDate: 'Nov 16 2022'
 ---
 

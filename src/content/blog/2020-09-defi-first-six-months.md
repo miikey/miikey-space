@@ -3,6 +3,7 @@ title: 'DeFi: My First Six Months Down the Rabbit Hole'
 description: 'I spent six months going deep on Aave, Compound, Uniswap, and Yearn. Here is what I actually learned about the infrastructure, the risks, and why I think this matters for payments.'
 heroImage: '/images/blog/defi-six-months-01.jpg'
 heroAlt: 'DeFi blockchain network'
+location: 'Singapore'
 pubDate: 'Sep 07 2020'
 ---
 
