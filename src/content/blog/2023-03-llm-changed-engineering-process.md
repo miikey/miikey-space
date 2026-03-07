@@ -10,8 +10,6 @@ ChatGPT launched in November 2022. By February 2023, GitHub Copilot was in wides
 
 Three months of serious daily use is enough time for the novelty to wear off and the real patterns to emerge. Here's an honest account of what has actually changed.
 
-![Developer writing code at a laptop](/images/blog/2023-03-llm-changed-engineering-process-inline-01.jpg)
-*LLM-assisted development has changed the texture of daily coding work — not by replacing judgment, but by accelerating the mechanical parts.*
 
 ## What Changed Immediately
 

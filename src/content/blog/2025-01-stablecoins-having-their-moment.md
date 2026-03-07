@@ -58,7 +58,5 @@ The payment infrastructure I'm building toward is one where the choice of settle
 
 We're probably 2-3 years from that being fully real. But 2025 is the year it stopped being theoretical and started being the thing enterprises are actually budgeting for.
 
-![Modern cityscape at dusk representing the future of digital finance](/images/blog/2025-01-stablecoins-having-their-moment-inline-03.jpg)
-*The future of payments isn't stablecoins versus traditional rails — it's a unified infrastructure where the settlement asset is a configuration choice.*
 
 The stablecoin moment took longer than I expected. It's here now.

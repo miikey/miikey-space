@@ -10,8 +10,6 @@ In March 2023 I wrote about how LLMs were changing my individual engineering pro
 
 This is what actually happened.
 
-![Team collaborating around laptops with data visualizations on screen](/images/blog/2023-11-ai-augmented-product-teams-inline-01.jpg)
-*Nine months of systematic AI integration across engineering, design, PM, and support*
 
 ## Engineering: Where the Gains Were Real
 

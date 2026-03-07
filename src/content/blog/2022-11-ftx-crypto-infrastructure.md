@@ -52,7 +52,5 @@ The projects and infrastructure companies that survive the next 18-24 months wil
 
 I remain convinced that crypto-native payment infrastructure — stablecoin settlement, programmable compliance, self-sovereign custody — represents a genuinely better architecture for moving money globally. FTX makes that argument harder to make in the short term. It doesn't invalidate it.
 
-![Sunrise over a city skyline symbolizing rebuilding and resilience](/images/blog/2022-11-ftx-crypto-infrastructure-inline-03.jpg)
-*The speculative layer gets stripped away. The infrastructure layer remains.*
 
 Build with integrity. That's the only response.

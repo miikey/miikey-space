@@ -44,8 +44,6 @@ What's powerful about this:
 
 **Auditable.** Every signing ceremony is logged: who participated, what was approved, when. Full audit trail without relying on internal accounting systems.
 
-![Server room with rows of blinking equipment](/images/blog/2024-05-mpc-wallets-crypto-needed-inline-02.jpg)
-*MPC key shares are distributed across independent infrastructure — different servers, different environments, different trust boundaries.*
 
 ## The Architecture We Built
 

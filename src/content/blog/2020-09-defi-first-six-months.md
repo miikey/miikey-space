@@ -10,8 +10,6 @@ In early 2020, a colleague sent me the Compound whitepaper. By September I'd dep
 
 Here's what six months of hands-on DeFi actually taught me.
 
-![DeFi liquidity pools and protocol dashboards on multiple screens](/images/blog/2020-09-defi-first-six-months-inline-01.jpg)
-*The DeFi dashboard view — tracking positions across Aave, Compound, and Yearn simultaneously*
 
 ## The Infrastructure Is Real
 

@@ -12,8 +12,6 @@ Then you try to build one for a real use case. The gap between demo and producti
 
 Having built and deployed several agents in production contexts over the past year, here's my honest accounting.
 
-![Abstract visualization of an AI system processing tasks in sequence](/images/blog/2024-09-ai-agents-demo-vs-reality-inline-01.jpg)
-*The elegant chain-of-thought reasoning in a demo hides the messy reality of tool failures, edge cases, and latency that define production systems.*
 
 ## What Demos Hide
 

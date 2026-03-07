@@ -10,8 +10,6 @@ In May 2022, TerraUSD (UST) — the algorithmic stablecoin backed by LUNA — lo
 
 I had been tracking algorithmic stablecoin designs closely since 2020. I want to write honestly about what happened, what I got right in my skepticism, and what I got wrong in underestimating the scale of the potential failure.
 
-![Stock market crash displayed on trading screens](/images/blog/2022-06-luna-collapse-lessons-inline-01.jpg)
-*$40 billion erased in 72 hours — the LUNA collapse was the most dramatic stress test of mechanism design in crypto history.*
 
 ## What Happened
 
