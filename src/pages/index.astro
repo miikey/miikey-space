@@ -18,10 +18,13 @@ const posts = (await getCollection('blog'))
     .hero { padding: 4rem 0 3rem; border-bottom: 1px solid var(--border); margin-bottom: 3rem; display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem; flex-wrap: wrap; }
     .section-label { font-family: var(--font-mono); font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted-2); margin-bottom: 1px; }
     .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); margin-bottom: 4rem; }
-    .card { background: var(--bg); padding: 1.5rem; text-decoration: none; color: var(--fg); transition: background 0.15s; display: flex; flex-direction: column; }
+    .card { background: var(--bg); text-decoration: none; color: var(--fg); transition: background 0.15s; display: flex; flex-direction: column; overflow: hidden; }
     .card:hover { background: var(--bg-2); }
     .card:hover .c-title { color: var(--accent); }
     .card.featured { grid-column: span 2; }
+    .card-img { width: 100%; height: 160px; object-fit: cover; display: block; border-bottom: 1px solid var(--border); }
+    .card.featured .card-img { height: 200px; }
+    .card-body { padding: 1.25rem; flex: 1; display: flex; flex-direction: column; }
     .c-meta { font-family: var(--font-mono); font-size: 0.65rem; color: var(--muted-2); margin-bottom: 0.5rem; }
     .c-title { font-size: 0.95rem; font-weight: 500; line-height: 1.4; margin-bottom: 0.5rem; transition: color 0.15s; }
     .c-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.6; flex: 1; }
@@ -80,9 +83,14 @@ const posts = (await getCollection('blog'))
     <div class="cards">
       {posts.map((p, i) => (
         <a href={`/blog/${p.id}/`} class={`card${i === 0 ? ' featured' : ''}`}>
-          <div class="c-meta">{p.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}</div>
-          <div class="c-title" style={i === 0 ? 'font-size:1.05rem' : ''}>{p.data.title}</div>
-          <div class="c-desc">{p.data.description}</div>
+          {p.data.heroImage && (
+            <img src={p.data.heroImage} alt={p.data.heroAlt ?? p.data.title} class="card-img" loading="lazy" />
+          )}
+          <div class="card-body">
+            <div class="c-meta">{p.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}</div>
+            <div class="c-title" style={i === 0 ? 'font-size:1.05rem' : ''}>{p.data.title}</div>
+            <div class="c-desc">{p.data.description}</div>
+          </div>
         </a>
       ))}
     </div>

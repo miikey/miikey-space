@@ -1,6 +1,8 @@
 ---
 title: 'Stablecoins Are Finally Having Their Moment'
 description: 'After years of being the infrastructure story nobody wanted to write about, stablecoins are going mainstream. Here is why 2025 feels different and what the payment infrastructure implications are.'
+heroImage: 'https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?w=1200&h=630&fit=crop&auto=format'
+heroAlt: 'Stablecoin USDC digital currency'
 pubDate: 'Jan 29 2025'
 ---
 

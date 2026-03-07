@@ -1,6 +1,8 @@
 ---
 title: 'MPC Wallets: The Infrastructure Upgrade Crypto Needed'
 description: 'Multi-Party Computation for key management is not a new idea, but it is finally practical at scale. Here is why MPC wallets matter and what the architecture looks like.'
+heroImage: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1200&h=630&fit=crop&auto=format'
+heroAlt: 'Crypto wallet security'
 pubDate: 'May 07 2024'
 ---
 

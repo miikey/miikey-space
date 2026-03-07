@@ -1,6 +1,8 @@
 ---
 title: 'When Algorithms Fail: Lessons from LUNA'
 description: 'The Terra/LUNA collapse erased $40 billion in value in 72 hours. As someone who had tracked algorithmic stablecoins closely, here is what I think we should learn from it.'
+heroImage: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&h=630&fit=crop&auto=format'
+heroAlt: 'Market chart crash'
 pubDate: 'Jun 08 2022'
 ---
 

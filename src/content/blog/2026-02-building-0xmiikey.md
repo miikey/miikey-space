@@ -1,6 +1,8 @@
 ---
 title: 'Why I Started Writing: A Note on 0xMiikey'
 description: 'Seven years of building payment infrastructure, crypto protocols, and AI products. Here is why I finally started writing it down.'
+heroImage: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&h=630&fit=crop&auto=format'
+heroAlt: 'Writing and building'
 pubDate: 'Feb 03 2026'
 ---
 

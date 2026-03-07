@@ -1,6 +1,8 @@
 ---
 title: 'AI-Augmented Product Teams: 9 Months In'
 description: 'We have been running AI-augmented product development seriously for nine months. Here is what actually changed, what did not, and what I wish I had done differently.'
+heroImage: 'https://images.unsplash.com/photo-1682687982501-1e58ab814714?w=1200&h=630&fit=crop&auto=format'
+heroAlt: 'AI augmented teams'
 pubDate: 'Nov 28 2023'
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: 'COVID Accelerated Digital Payments by a Decade'
 description: 'In twelve weeks, contactless payment adoption did what ten years of industry evangelism could not. Here is what changed, what will stick, and what the payment industry looks like on the other side.'
+heroImage: 'https://images.unsplash.com/photo-1580048915913-4f8f5cb481c4?w=1200&h=630&fit=crop&auto=format'
+heroAlt: 'Mobile digital payments'
 pubDate: 'Apr 22 2020'
 ---
 

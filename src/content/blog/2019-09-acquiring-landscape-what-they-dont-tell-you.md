@@ -1,6 +1,8 @@
 ---
 title: "The Acquiring Landscape: What They Don't Tell You"
 description: "A frank breakdown of payment acquiring — interchange, scheme fees, merchant discount rates, and why the numbers rarely work out the way the sales deck says."
+heroImage: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&h=630&fit=crop&auto=format'
+heroAlt: 'Payment processing infrastructure'
 pubDate: 'Sep 18 2019'
 ---
 

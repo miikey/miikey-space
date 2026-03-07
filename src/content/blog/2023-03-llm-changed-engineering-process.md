@@ -1,6 +1,8 @@
 ---
 title: 'ChatGPT Changed My Engineering Process. Here Is How.'
 description: 'Three months into daily LLM use, here is what has actually changed in how I build — not the hype, the real behavioral shifts and where the limits are.'
+heroImage: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format'
+heroAlt: 'AI language model'
 pubDate: 'Mar 21 2023'
 ---
 

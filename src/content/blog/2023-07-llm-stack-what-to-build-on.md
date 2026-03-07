@@ -1,6 +1,8 @@
 ---
 title: 'The LLM Stack: What to Actually Build On'
 description: 'Six months into the LLM boom, the stack is becoming clearer. Here is my current view on which layers are commodity, which are differentiating, and where the value actually accrues.'
+heroImage: 'https://images.unsplash.com/photo-1675271591211-930246f9f3b0?w=1200&h=630&fit=crop&auto=format'
+heroAlt: 'AI technology stack'
 pubDate: 'Jul 12 2023'
 ---
 
