@@ -1,143 +1,116 @@
 ---
-import { getCollection } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import FormattedDate from '../components/FormattedDate.astro';
+import { getCollection } from 'astro:content';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 const posts = (await getCollection('blog'))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .slice(0, 4);
+  .slice(0, 6);
 ---
 
 <!doctype html>
 <html lang="en">
 <head>
   <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  <style>
+    .wrap { max-width: 900px; margin: 0 auto; padding: 0 1.5rem 6rem; }
+    .hero { padding: 4rem 0 3rem; border-bottom: 1px solid var(--border); margin-bottom: 3rem; display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem; flex-wrap: wrap; }
+    .section-label { font-family: var(--font-mono); font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted-2); margin-bottom: 1px; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); margin-bottom: 4rem; }
+    .card { background: var(--bg); padding: 1.5rem; text-decoration: none; color: var(--fg); transition: background 0.15s; display: flex; flex-direction: column; }
+    .card:hover { background: var(--bg-2); }
+    .card:hover .c-title { color: var(--accent); }
+    .card.featured { grid-column: span 2; }
+    .c-meta { font-family: var(--font-mono); font-size: 0.65rem; color: var(--muted-2); margin-bottom: 0.5rem; }
+    .c-title { font-size: 0.95rem; font-weight: 500; line-height: 1.4; margin-bottom: 0.5rem; transition: color 0.15s; }
+    .c-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.6; flex: 1; }
+    .p-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); }
+    .p-card { background: var(--bg); padding: 1.25rem; text-decoration: none; color: var(--fg); transition: background 0.15s; }
+    .p-card:hover { background: var(--bg-2); }
+    .p-card:hover .p-name { color: var(--accent); }
+    .p-name { font-size: 0.9rem; font-weight: 500; margin-bottom: 0.35rem; transition: color 0.15s; }
+    .p-desc { font-size: 0.75rem; color: var(--muted); line-height: 1.5; }
+    @media(max-width: 700px) {
+      .cards, .p-cards { grid-template-columns: 1fr; }
+      .card.featured { grid-column: span 1; }
+      .hero { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
 </head>
 <body>
-  <Header />
-  <main style="max-width: 720px; margin: 0 auto; padding: 4rem 1.5rem 2rem;">
+  <!-- Nav -->
+  <nav style="max-width:900px;margin:0 auto;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border);">
+    <a href="/" style="font-family:var(--font-mono);font-size:0.9rem;color:var(--accent);text-decoration:none;">0xMiikey</a>
+    <div style="display:flex;gap:2rem;">
+      <a href="/blog" style="font-size:0.83rem;color:var(--muted);text-decoration:none;transition:color 0.15s;" onmouseover="this.style.color='var(--fg)'" onmouseout="this.style.color='var(--muted)'">Writing</a>
+      <a href="/projects" style="font-size:0.83rem;color:var(--muted);text-decoration:none;transition:color 0.15s;" onmouseover="this.style.color='var(--fg)'" onmouseout="this.style.color='var(--muted)'">Projects</a>
+      <a href="/about" style="font-size:0.83rem;color:var(--muted);text-decoration:none;transition:color 0.15s;" onmouseover="this.style.color='var(--fg)'" onmouseout="this.style.color='var(--muted)'">About</a>
+    </div>
+  </nav>
 
+  <div class="wrap">
     <!-- Hero -->
-    <section style="margin-bottom: 5rem;">
-      <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
-        <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent); background: var(--accent-dim); border: 1px solid rgba(0,220,130,0.2); padding: 0.25rem 0.75rem; border-radius: 999px;">
+    <div class="hero">
+      <div>
+        <h1 style="font-size:clamp(2rem,5vw,2.75rem);font-weight:700;letter-spacing:-0.04em;line-height:1.15;margin-bottom:0.75rem;color:var(--fg);">
+          0xMiikey
+        </h1>
+        <p style="font-size:0.98rem;color:var(--muted);max-width:440px;line-height:1.8;">
+          Engineer turned founder. Building payment infrastructure for the borderless economy.
+          Writing about fintech, crypto & AI.
+        </p>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.6rem;flex-shrink:0;">
+        <span style="font-family:var(--font-mono);font-size:0.72rem;color:var(--accent);background:var(--accent-dim);border:1px solid rgba(0,220,130,0.2);padding:0.25rem 0.7rem;border-radius:999px;">
           Fintech · Crypto · AI
         </span>
+        <div style="display:flex;gap:1.25rem;">
+          <a href="https://twitter.com/0xmiikey" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:0.72rem;color:var(--muted);text-decoration:none;transition:color 0.15s;" onmouseover="this.style.color='var(--fg)'" onmouseout="this.style.color='var(--muted)'">@0xmiikey ↗</a>
+          <a href="https://github.com/miikey" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:0.72rem;color:var(--muted);text-decoration:none;transition:color 0.15s;" onmouseover="this.style.color='var(--fg)'" onmouseout="this.style.color='var(--muted)'">github ↗</a>
+        </div>
       </div>
-
-      <h1 style="font-size: clamp(2rem, 5vw, 2.75rem); font-weight: 700; letter-spacing: -0.04em; line-height: 1.15; margin-bottom: 1.5rem; color: var(--fg);">
-        Building at the edge of<br/>
-        <span style="color: var(--accent);">fintech, crypto & AI.</span>
-      </h1>
-
-      <p style="font-size: 1.05rem; color: #888; line-height: 1.85; max-width: 560px; margin-bottom: 1rem;">
-        I'm 0xMiikey — engineer turned founder. Building payment infrastructure for the borderless economy. Previously deep in DeFi protocol development and crypto-native payments.
-      </p>
-      <p style="font-size: 1.05rem; color: #888; line-height: 1.85; max-width: 560px;">
-        Right now I'm obsessed with one question: <em style="color: #aaa;">how does AI fundamentally
-        reshape what it means to build a product team — and what survives the shift?</em>
-      </p>
-
-      <div style="display: flex; gap: 1.25rem; margin-top: 2rem; flex-wrap: wrap;">
-        <a href="https://twitter.com/0xmiikey" target="_blank" rel="noopener"
-          style="font-size: 0.875rem; font-family: var(--font-mono); color: var(--muted); display: flex; align-items: center; gap: 0.4rem; transition: color 0.15s;"
-          onmouseover="this.style.color='var(--fg)'" onmouseout="this.style.color='var(--muted)'">
-          @0xmiikey ↗
-        </a>
-        <a href="https://github.com/miikey" target="_blank" rel="noopener"
-          style="font-size: 0.875rem; font-family: var(--font-mono); color: var(--muted); transition: color 0.15s;"
-          onmouseover="this.style.color='var(--fg)'" onmouseout="this.style.color='var(--muted)'">
-          github/miikey ↗
-        </a>
-      </div>
-    </section>
+    </div>
 
     <!-- Writing -->
-    <section style="margin-bottom: 4.5rem;">
-      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
-        <h2 style="font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted-2);">
-          Writing
-        </h2>
-        <a href="/blog" class="nav-link" style="font-size: 0.8rem;">All posts →</a>
-      </div>
-      <ul style="list-style: none;">
-        {posts.map((post) => (
-          <li>
-            <a href={`/blog/${post.id}/`} class="row-item" style="display:flex; align-items:baseline; justify-content:space-between; gap:1rem; padding:0.85rem 0; border-top:1px solid var(--border); text-decoration:none; color:var(--fg);">
-              <span class="row-title" style="font-size: 0.95rem;">{post.data.title}</span>
-              <span style="font-size: 0.78rem; color: var(--muted); white-space: nowrap; font-family: var(--font-mono);">
-                <FormattedDate date={post.data.pubDate} />
-              </span>
-            </a>
-          </li>
-        ))}
-        <li style="border-top: 1px solid var(--border);"></li>
-      </ul>
-    </section>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1px;">
+      <p class="section-label" style="margin:0">Writing</p>
+      <a href="/blog" style="font-family:var(--font-mono);font-size:0.68rem;color:var(--muted);text-decoration:none;transition:color 0.15s;" onmouseover="this.style.color='var(--fg)'" onmouseout="this.style.color='var(--muted)'">All posts →</a>
+    </div>
+    <div class="cards">
+      {posts.map((p, i) => (
+        <a href={`/blog/${p.id}/`} class={`card${i === 0 ? ' featured' : ''}`}>
+          <div class="c-meta">{p.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}</div>
+          <div class="c-title" style={i === 0 ? 'font-size:1.05rem' : ''}>{p.data.title}</div>
+          <div class="c-desc">{p.data.description}</div>
+        </a>
+      ))}
+    </div>
 
     <!-- Projects -->
-    <section style="margin-bottom: 4.5rem;">
-      <h2 style="font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted-2); margin-bottom: 1.25rem;">
-        Projects
-      </h2>
-      <ul style="list-style: none;">
-        {[
-          {
-            name: 'ClearChain',
-            desc: 'Blockchain-based settlement layer for cross-border payment networks. Reduces FX settlement time from T+2 to near real-time.',
-            href: '/projects/clearchain',
-            tag: 'Protocol',
-          },
-          {
-            name: 'RiskGuard',
-            desc: 'AI-powered fraud detection and real-time risk scoring engine for card acquiring pipelines.',
-            href: '/projects/riskguard',
-            tag: 'AI · Risk',
-          },
-          {
-            name: 'Threshold Signer',
-            desc: 'MPC wallet infrastructure implementing threshold signature schemes for institutional-grade key management.',
-            href: '/projects/threshold-signer',
-            tag: 'MPC · Crypto',
-          },
-        ].map((p) => (
-          <li>
-            <a href={p.href} target="_blank" rel="noopener"
-              style="display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:0.9rem 0; border-top:1px solid var(--border); text-decoration:none; flex-wrap:wrap;"
-              onmouseover="this.querySelector('.p-name').style.color='var(--accent)'"
-              onmouseout="this.querySelector('.p-name').style.color='var(--fg)'">
-              <div style="display:flex; flex-direction:column; gap:0.2rem; flex:1; min-width:0;">
-                <span class="p-name" style="font-size:0.95rem; font-weight:500; color:var(--fg); transition:color 0.15s;">{p.name}</span>
-                <span style="font-size:0.82rem; color:var(--muted);">{p.desc}</span>
-              </div>
-              <span class="tag">{p.tag}</span>
-            </a>
-          </li>
-        ))}
-        <li style="border-top: 1px solid var(--border);"></li>
-      </ul>
-    </section>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1px;">
+      <p class="section-label" style="margin:0">Projects</p>
+      <a href="/projects" style="font-family:var(--font-mono);font-size:0.68rem;color:var(--muted);text-decoration:none;transition:color 0.15s;" onmouseover="this.style.color='var(--fg)'" onmouseout="this.style.color='var(--muted)'">All projects →</a>
+    </div>
+    <div class="p-cards">
+      {[
+        { name: 'ClearChain', desc: 'Blockchain settlement layer — T+2 to real-time.', tag: 'Protocol', status: 'Building', href: '/projects/clearchain' },
+        { name: 'RiskGuard', desc: 'AI fraud detection for card acquiring pipelines.', tag: 'AI · Risk', status: 'Building', href: '/projects/riskguard' },
+        { name: 'Threshold Signer', desc: 'MPC wallet infrastructure for institutional custody.', tag: 'MPC', status: 'Building', href: '/projects/threshold-signer' },
+        { name: 'CardOS', desc: 'Programmable card issuance platform via API.', tag: 'Issuing', status: 'Building', href: '/projects/cardos' },
+      ].map((p) => (
+        <a href={p.href} class="p-card">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.6rem;">
+            <span class="tag" style="font-size:0.6rem">{p.tag}</span>
+            <span style={`font-size:0.6rem;font-family:var(--font-mono);padding:0.1rem 0.45rem;border-radius:999px;${p.status === 'Live' ? 'color:var(--accent);background:var(--accent-dim);border:1px solid rgba(0,220,130,0.2)' : 'color:var(--muted-2);background:var(--bg-2);border:1px solid var(--border)'}`}>{p.status}</span>
+          </div>
+          <div class="p-name">{p.name}</div>
+          <div class="p-desc">{p.desc}</div>
+        </a>
+      ))}
+    </div>
+  </div>
 
-    <!-- Now -->
-    <section>
-      <h2 style="font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted-2); margin-bottom: 1.25rem;">
-        Now
-      </h2>
-      <div style="border-left: 2px solid var(--accent); padding-left: 1.25rem;">
-        <p style="font-size: 0.95rem; color: #888; line-height: 1.85; margin-bottom: 0.75rem;">
-          Scaling payment infrastructure across markets, navigating compliance complexity, and keeping the team sharp as AI rewrites the playbook for how software gets built.
-        </p>
-        <p style="font-size: 0.95rem; color: #888; line-height: 1.85;">
-          Deeply thinking about: the shrinking gap between product and engineering, what "senior engineer"
-          means in an AI-augmented world, and whether crypto-native payments finally have their moment.
-        </p>
-      </div>
-    </section>
-
-  </main>
   <Footer />
 </body>
 </html>
