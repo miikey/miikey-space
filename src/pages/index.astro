@@ -13,6 +13,25 @@ const posts = (await getCollection('blog'))
 <html lang="en">
 <head>
   <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "MIIKEY",
+    "alternateName": "0xMiikey",
+    "url": "https://miikey.com",
+    "sameAs": [
+      "https://twitter.com/0xmiikey",
+      "https://github.com/miikey"
+    ],
+    "jobTitle": "Co-founder, CTO & CPO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "UQPAY",
+      "url": "https://uqpay.com"
+    },
+    "description": "Serial founder and operator building global payment infrastructure. Based in Singapore.",
+    "knowsAbout": ["fintech", "payment infrastructure", "cross-border payments", "AI", "product strategy"]
+  })} />
   <style>
     .wrap { max-width: 900px; margin: 0 auto; padding: 0 1.5rem 6rem; }
     .hero { padding: 4rem 0 3rem; border-bottom: 1px solid var(--border); margin-bottom: 3rem; display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem; flex-wrap: wrap; }
