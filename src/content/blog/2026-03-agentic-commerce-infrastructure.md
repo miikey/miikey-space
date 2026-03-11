@@ -1,7 +1,7 @@
 ---
 title: 'The Infrastructure Layer for Agentic Commerce Is Being Assembled'
 description: 'Stripe just shipped the Agentic Commerce Suite. That is not a product launch — it is a signal that the foundational infrastructure for AI-driven commerce is being built right now. Here is how I think about the full stack.'
-heroImage: '/images/blog/llm-stack-fintech.jpg'
+heroImage: '/images/blog/ai-fintech-01.jpg'
 heroAlt: 'Agentic commerce infrastructure layers'
 location: 'Singapore'
 pubDate: 'Mar 11 2026'
@@ -31,7 +31,7 @@ Stripe is calling this standard ACP, the [Agentic Commerce Protocol](https://www
 
 The implication for merchants is direct: product discovery is about to bifurcate. There will be the Google graph and there will be the agent graph. Both matter. The optimization strategies are different.
 
-![An engineer configuring product catalog APIs and structured data endpoints for multi-channel distribution](/images/blog/2024-09-ai-agents-demo-vs-reality-inline-01.jpg)
+![Global network map showing product catalog syndication flows between merchants and AI agent platforms](/images/blog/stablecoins-01.jpg)
 *The catalog layer is where agentic commerce starts — structured, machine-readable, real-time. Getting this right is the new SEO.*
 
 ## Shared Payment Tokens: The Right Design Pattern
@@ -70,7 +70,7 @@ The solution isn't to whitelist all agent traffic. That would be a fraud exposur
 
 > **Every risk model in payments was built on human behavioral data. The shift to agentic commerce means rebuilding those models from first principles — not tuning them, rebuilding them. This is a multi-year infrastructure effort that most payment companies haven't started yet.**
 
-![A payment operations team reviewing transaction monitoring dashboards, risk scores, and agent traffic patterns](/images/blog/2024-09-ai-agents-demo-vs-reality-inline-02.jpg)
+![Payment operations dashboard with transaction monitoring, fraud signals, and risk scoring for automated flows](/images/blog/cross-border-evolved-01.jpg)
 *Fraud models calibrated on human behavior will systematically misclassify agent traffic. Rebuilding the risk stack for agentic commerce is infrastructure work that most payment companies haven't started.*
 
 ## The Full Stack, Layer by Layer
