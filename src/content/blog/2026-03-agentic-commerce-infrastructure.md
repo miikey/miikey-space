@@ -4,7 +4,7 @@ description: 'Stripe just shipped the Agentic Commerce Suite. That is not a prod
 heroImage: '/images/blog/ai-fintech-01.jpg'
 heroAlt: 'Agentic commerce infrastructure layers'
 location: 'Singapore'
-pubDate: 'Mar 11 2026'
+pubDate: 'Mar 12 2026'
 ---
 
 Last week, Stripe announced the [Agentic Commerce Suite](https://stripe.com/blog/agentic-commerce-suite) — a solution that lets businesses make their products discoverable by AI agents, simplify checkout for agent-initiated transactions, and accept payments through a new primitive called Shared Payment Tokens.

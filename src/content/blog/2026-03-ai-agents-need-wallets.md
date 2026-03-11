@@ -4,7 +4,7 @@ description: 'The next frontier for agentic AI is not capability — it is econo
 heroImage: '/images/blog/ai-agents-01.jpg'
 heroAlt: 'AI agent with digital wallet and payment flows'
 location: 'Singapore'
-pubDate: 'Mar 11 2026'
+pubDate: 'Mar 12 2026'
 ---
 
 The AI agent demo era is effectively over. The question we spent 2024 asking — "can agents actually do useful work?" — has been answered well enough to move on. Agents can research, write, code, analyze, and coordinate. The question that matters now is different:
