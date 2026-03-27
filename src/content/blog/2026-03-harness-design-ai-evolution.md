@@ -1,7 +1,7 @@
 ---
 title: 'The Harness Is the Product'
 description: 'Anthropic just published their most instructive engineering post yet — on how they build harnesses for long-running AI agents. The real insight is not the architecture. It is the methodology: every component encodes an assumption about what the model cannot do, and those assumptions expire. Here is what that means for anyone building production AI systems.'
-heroImage: '/images/blog/ai-agents-01.jpg'
+heroImage: '/images/blog/harness-design-01.jpg'
 heroAlt: 'Multi-agent harness architecture for long-running AI applications'
 location: 'Singapore'
 pubDate: 'Mar 27 2026'
