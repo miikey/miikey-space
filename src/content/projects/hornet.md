@@ -11,7 +11,9 @@ links:
 
 *Swarm ships, humans steer.*
 
-Hornet is an AI Agent Swarm orchestration engine built for the UQPay engineering team. A single message in Lark triggers automatic requirement analysis, architecture design, coding, testing, and code review — all the way to a production-ready Pull Request. Humans approve at critical gates. The AI swarm handles everything in between.
+![Hornet — AI Agent Swarm Orchestration Engine](/images/blog/hornet-01.jpg)
+
+I led the engineering team at UQPay in building Hornet — an AI Agent Swarm orchestration engine. A single message in Lark triggers automatic requirement analysis, architecture design, coding, testing, and code review — all the way to a production-ready Pull Request. Humans approve at critical gates. The AI swarm handles everything in between.
 
 ## The Paradigm Shift: Harness Engineering
 
@@ -115,10 +117,6 @@ Total machine time: **< 10 min** | Token cost: **~$1.20**
 | Human approval gates | 2 |
 
 Monthly token cost at 100 Stings/month: ~$120. A mid-level engineer costs 50–100× that. Hornet isn't about saving money — it's about creating delivery velocity that was previously impossible.
-
-## Technology Stack
-
-Built in **Rust** (Axum 0.8, sqlx, bollard, git2) with **MySQL 8.0 + Redis 7** for state. **Docker** provides sandbox isolation per Sting. **tree-sitter** handles AST-level code indexing; **tantivy** powers full-text search across repos. The AI layer routes across **Claude Haiku / Sonnet / Opus** depending on task complexity. **Lark (Feishu)** Webhook + Bot API handles all human-AI interaction. **OpenTelemetry** provides full observability across every agent step.
 
 ---
 
