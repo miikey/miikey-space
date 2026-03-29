@@ -118,6 +118,10 @@ Total machine time: **< 10 min** | Token cost: **~$1.20**
 
 Monthly token cost at 100 Stings/month: ~$120. A mid-level engineer costs 50–100× that. Hornet isn't about saving money — it's about creating delivery velocity that was previously impossible.
 
+## Open Source
+
+Hornet is currently an internal system built for UQPay's engineering workflow. We are considering an open source release in the future — the harness patterns and orchestration primitives here are broadly applicable beyond payment infrastructure, and we believe the broader engineering community would benefit from a production-tested implementation of these ideas.
+
 ---
 
 *Let the swarm deliver. You steer.*
