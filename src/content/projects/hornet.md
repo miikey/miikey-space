@@ -13,7 +13,7 @@ links:
 
 ![Hornet — AI Agent Swarm Orchestration Engine](/images/blog/hornet-01.jpg)
 
-I led the engineering team at UQPay in building Hornet — an AI Agent Swarm orchestration engine. A single message in Lark triggers automatic requirement analysis, architecture design, coding, testing, and code review — all the way to a production-ready Pull Request. Humans approve at critical gates. The AI swarm handles everything in between.
+I am leading the engineering team at UQPay in building Hornet — an AI Agent Swarm orchestration engine. A single message in Lark triggers automatic requirement analysis, architecture design, coding, testing, and code review — all the way to a production-ready Pull Request. Humans approve at critical gates. The AI swarm handles everything in between.
 
 ## The Paradigm Shift: Harness Engineering
 
