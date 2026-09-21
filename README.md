@@ -1,62 +1,46 @@
-# Astro Starter Kit: Blog
+# Miikey — deployment package
+
+Current approved English single-page website with the lowercase `miikey_` wordmark, Geist Mono typography and blue underscore (`#3659dd`).
+
+## Deployment
+
+- **Publish directory:** `site/`
+- **Build command:** none
+- **Install command:** none
+- **Runtime:** static HTML, CSS and fonts; no backend, API keys or JavaScript needed
+- **GitHub Pages:** workflow supplied in `.github/workflows/pages.yml`
+
+Read **[DEPLOY.md](DEPLOY.md)** for the deployment-agent handoff and custom-domain setup.
+
+## Local preview
+
+From this package’s root:
 
 ```sh
-npm create astro@latest -- --template blog
+python3 -m http.server 8000 --directory site
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Then open `http://localhost:8000/`.
 
-Features:
-
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+## Files
 
 ```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
+.github/workflows/pages.yml
+DEPLOY.md
+README.md
+site/
+  index.html
+  .nojekyll
+  native-mark.svg
+  assets/
+    site.css
+    fonts.css
+    inter-latin.woff2
+    geist-mono.woff2
+    inter-OFL.txt
+    geist-OFL.txt
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+All local asset paths are relative. The page works at a custom domain root or a GitHub project Pages subpath. Fonts are included locally; retain their accompanying SIL Open Font License files.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+Edit `site/index.html` for copy and `site/assets/site.css` for presentation. No generator is required. Historical design experiments and the previous hosting service’s configuration are intentionally excluded.
